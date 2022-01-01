@@ -1,3 +1,6 @@
+//for PWM https://docs.m5stack.com/en/api/pwm
+// ledcSetup() is needed
+// code from https://shikarunochi.matrix.jp/?p=3859
 #include <M5Atom.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
