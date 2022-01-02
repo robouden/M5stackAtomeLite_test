@@ -16,10 +16,15 @@ void setup() {
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 
   display.clearDisplay();
-  display.setTextSize(1);             // Normal 1:1 pixel scale
+  display.setTextSize(2);             // Normal 1:1 pixel scale
   display.setTextColor(SSD1306_WHITE);        // Draw white text
-  display.setCursor(20,32);             // Start at top-left corner
-  display.println(F("Hello World!"));
+  display.setCursor(20,10);             // Start at top-left corner
+  display.println(F("ZPE setup"));
+  display.setTextSize(1);   
+  display.println(F("IN1 ="));
+  display.println(F("IN2 ="));
+  display.println(F("OUT1 ="));
+  display.println(F("OUT2 ="));
   display.display();
 }
 void loop(){
