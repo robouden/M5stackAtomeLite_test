@@ -16,29 +16,30 @@ const int ledChannel = 0;
 const int resolution = 8;
  
 void setup(){
-  //setup M5
+  Serial.begin(115200);
   M5.begin(true, false, true);  // (Serial, I2C, NeoPixel)
   Wire.begin(21,25);
+  Serial.println("start setup");
 
 
   // configure LED PWM functionalitites
-  ledcSetup(ledChannel, freq, resolution);
-  // attach the channel to the GPIO to be controlled
-  ledcAttachPin(ledPin, ledChannel);
+  // ledcSetup(ledChannel, freq, resolution);
+  // // attach the channel to the GPIO to be controlled
+  // ledcAttachPin(ledPin, ledChannel);
 }
  
 void loop(){
-  // increase the LED brightness
-  for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){   
-    // changing the LED brightness with PWM
-    ledcWrite(ledChannel, dutyCycle);
-    delay(15);
-  }
+  // // increase the LED brightness
+  // for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){   
+  //   // changing the LED brightness with PWM
+  //   ledcWrite(ledChannel, dutyCycle);
+  //   delay(15);
+  // }
 
   // decrease the LED brightness
-  for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
-    // changing the LED brightness with PWM
-    ledcWrite(ledChannel, dutyCycle);   
-    delay(15);
-  }
+  // for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
+  //   // changing the LED brightness with PWM
+  //   ledcWrite(ledChannel, dutyCycle);   
+  //   delay(15);
+  // }
 }

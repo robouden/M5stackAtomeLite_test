@@ -40,7 +40,7 @@ void setup() {
   // LED(0固定)
   // M5.dis.drawpix(0, CRGB::Green);
   M5.dis.drawpix(0,  HSVHue::HUE_RED);
-  //Setup 
+  //Setup
   Serial.println("start setup");
   display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
 
