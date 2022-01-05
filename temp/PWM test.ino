@@ -7,39 +7,47 @@
 // The available duty levels are (2^bit_num)-1, where bit_num can be 1-15.
 // The maximal frequency is 80000000 / 2^bit_num
 
-// the number of the LED pin
-const int ledPin = 16;  // 16 corresponds to GPIO16
+//Atom Lite pins
+// PIN Port	G19, G21，G22，G23，G25, G33
+  // RGB Led	G27
+  // Btn	    G39
+  // IR	      G12
 
+// the number of the PWM pin
+const int PWMPin = 19;  
 // setting PWM properties
-const int freq = 5000;
-const int ledChannel = 0;
-const int resolution = 8;
+const int freq = 5000000;
+const int PWMChannel = 0;
+const int resolution = 4;
+int dutyCycle = 2;
  
 void setup(){
   Serial.begin(115200);
   M5.begin(true, false, true);  // (Serial, I2C, NeoPixel)
-  Wire.begin(21,25);
+  // Wire.begin(21,25);//I2C
   Serial.println("start setup");
-
-
+  Serial.printf("Duty = %d  Freq = %d HZ \n", (int)dutyCycle,freq);
   // configure LED PWM functionalitites
-  // ledcSetup(ledChannel, freq, resolution);
-  // // attach the channel to the GPIO to be controlled
-  // ledcAttachPin(ledPin, ledChannel);
+  ledcSetup(PWMChannel, freq, resolution);
+  // attach the channel to the GPIO to be controlled
+  ledcAttachPin(PWMPin, PWMChannel);
+  ledcWrite(PWMChannel, dutyCycle);
 }
  
 void loop(){
   // // increase the LED brightness
   // for(int dutyCycle = 0; dutyCycle <= 255; dutyCycle++){   
-  //   // changing the LED brightness with PWM
-  //   ledcWrite(ledChannel, dutyCycle);
-  //   delay(15);
+    // changing the LED brightness with PWM
+
+    // dutyCycle = 255;
+    // ledcWrite(PWMChannel, dutyCycle);
+    // delay(15);
   // }
 
-  // decrease the LED brightness
+  // // decrease the LED brightness
   // for(int dutyCycle = 255; dutyCycle >= 0; dutyCycle--){
   //   // changing the LED brightness with PWM
-  //   ledcWrite(ledChannel, dutyCycle);   
+  //   ledcWrite(PWMChannel, dutyCycle);   
   //   delay(15);
   // }
 }

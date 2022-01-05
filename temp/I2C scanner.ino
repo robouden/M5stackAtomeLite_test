@@ -9,7 +9,7 @@ void setup()
 {
   Serial.begin(115200);
   M5.begin(true,false,true);
-  Wire.begin(21,25);
+  Wire.begin(21,25);//I2C
   Serial.println("start setup");
 
 }
