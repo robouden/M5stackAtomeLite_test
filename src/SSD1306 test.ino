@@ -11,6 +11,7 @@
 #include <M5Atom.h>
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
+#include "ESP32MotorControl.h" 	// https://github.com/JoaoLopesF/ESP32MotorControl
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
@@ -83,7 +84,7 @@ void loop() {
 
     //increase dutycycle
     dutyCycle++;
-    if (dutyCycle>= 8) dutyCycle=0;
+    if (dutyCycle>= 15) dutyCycle=0;
 
     //Write to PWM controller
     ledcWrite(PWMChannel, dutyCycle);
