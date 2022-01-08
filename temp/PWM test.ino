@@ -5,7 +5,24 @@
 // The duty resolution can be lowered down to 1 bit in which case the maximum frequency is 40 MHz, but only the duty of 50% is available.
 // For duty resolution of 8 buts, the maximal frequency is 312.5 kHz.
 // The available duty levels are (2^bit_num)-1, where bit_num can be 1-15.
-// The maximal frequency is 80000000 / 2^bit_num
+// Bit	resolution	maximum frequency
+// 16	65536	1,220.70Hz
+// 15	32768	2,441.41Hz
+// 14	16384	4,882.81Hz
+// 13	8192	9,765.63Hz
+// 12	4096	19,531.25Hz
+// 11	2048	39,062.50Hz
+// 10	1024	78,125.00Hz
+// 9	512	  156,250.00Hz
+// 8	256	  312,500.00Hz
+// 7	128	  625,000.00Hz
+// 6	64	  1,250,000.00Hz
+// 5	32	  2,500,000.00Hz
+// 4	16	  5,000,000.00Hz
+// 3	8	    10,000,000.00Hz
+// 2	4	    20,000,000.00Hz
+// 1	2	    40,000,000.00Hz// The maximal frequency is 80000000 / 2^bit_num
+
 
 //Atom Lite pins
 // PIN Port	G19, G21，G22，G23，G25, G33
