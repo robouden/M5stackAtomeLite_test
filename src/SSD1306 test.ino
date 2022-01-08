@@ -50,6 +50,9 @@ int freq = 100000;
 int PWMChannel = 0;
 int resolution = 4;
 int dutyCycle = 1;
+float pot_Freq_Rough_Read;
+float pot_Freq_Rough_Read_old;
+int pot_Freq_Rough_pin=33;
 
 
 void setup() {
@@ -64,10 +67,10 @@ void setup() {
   ledcWrite(PWMChannel, dutyCycle);
 
     // GPIO初期化
-  pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,       )
-  pinMode(19, INPUT); // PIN  (INPUT, OUTPUT,       )
-  pinMode(23, INPUT); // PIN  (INPUT, OUTPUT,       )
-  pinMode(33, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)
+  pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,       )  input frequency potmeter
+  pinMode(19, INPUT); // PIN  (INPUT, OUTPUT,       ) output for driver
+  pinMode(23, INPUT); // PIN  (INPUT, OUTPUT,       ) 
+  pinMode(33, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG)
   pinMode(21, INPUT); // PIN  (INPUT, OUTPUT,       )
   pinMode(25, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可
   pinMode(26, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可, DAC出力可
@@ -109,10 +112,12 @@ void loop() {
 
       //Read analog pot variables and map to duty cycle and frequency
       // for frequency rough the idea is:
-      //  int pot_Freq_Rough_Read = map(analogRead(potPin), 0, 1023, 0, 1000);
-      // if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>60){
-      //   pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
-
+      int pot_Freq_Rough_Read = analogRead(pot_Freq_Rough_pin);
+      if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>300){
+        pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
+        Serial.print("Pot frequency changed new value=");
+        Serial.println(pot_Freq_Rough_Read);
+      }
 
   if (M5.Btn.wasPressed()) {
     //Serial print button pressed
