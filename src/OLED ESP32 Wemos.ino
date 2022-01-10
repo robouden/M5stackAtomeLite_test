@@ -29,18 +29,14 @@
 // 1	2	    40,000,000.00Hz// The maximal frequency is 80000000 / 2^bit_num
 
 
-
-
-// ledcSetup() is needed
-// code from https://shikarunochi.matrix.jp/?p=3859
-#include <M5Atom.h>
+#include <Wire.h>
 #include "driver/ledc.h"
 #include <Adafruit_GFX.h>
 #include <Adafruit_SSD1306.h>
 // #include "ESP32MotorControl.h" 	// https://github.com/JoaoLopesF/ESP32MotorControl
 #define SCREEN_WIDTH 128 // OLED display width, in pixels
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
-Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire);
+Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 #define VERSION "0.91"
 
@@ -57,8 +53,7 @@ int pot_Freq_Rough_pin=33;
 
 void setup() {
   Serial.begin(115200);
-  M5.begin(true, false, true);  // (Serial, I2C, NeoPixel)
-  Wire.begin(4,5); //I2C setup for display not using the M5 lib for Atome 
+  Wire.begin(5,4); //I2C 
   
   //Setup PWM parameters
   ledcSetup(PWMChannel, freq, resolution);
@@ -80,9 +75,6 @@ void setup() {
   pinMode(12, OUTPUT_OPEN_DRAIN); // IR赤外線(LOWで出力)
   digitalWrite(12, HIGH);
 
-  // Setup LED
-  // M5.dis.drawpix(0, CRGB::Green);
-    M5.dis.drawpix(0,  HSVHue::HUE_RED);
 
   //Display startup serial info
     Serial.println("start setup");
@@ -91,7 +83,7 @@ void setup() {
  //Display startup info
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
     display.clearDisplay();
-    display.setTextSize(1);              // Normal 1:1 pixel scale
+    display.setTextSize(2);              // Normal 1:1 pixel scale
     display.setTextColor(SSD1306_WHITE); // Draw white text
     display.setCursor(0,0);              // Start at top-left corner
     display.print(F("ZPE V"));
@@ -103,12 +95,11 @@ void setup() {
     display.println(freq);
     // display.println(F("OUT2 ="));
     display.display();
-    ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+
 
   
 } 
 void loop() {
-  M5.update();
 
       //Read analog pot variables and map to duty cycle and frequency
       // for frequency rough the idea is:
@@ -119,9 +110,9 @@ void loop() {
         Serial.println(pot_Freq_Rough_Read);
       }
 
-  if (M5.Btn.wasPressed()) {
-    //Serial print button pressed
-    Serial.println("Btn was pressed");
+  // if (M5.Btn.wasPressed()) {
+  //   //Serial print button pressed
+  //   Serial.println("Btn was pressed");
 
     //increase dutycycle
     // dutyCycle++;
@@ -158,6 +149,6 @@ void loop() {
     display.println(freq);
     // ledc_get_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0);
     display.display();
-  }
-  delay(1);
+  // }
+  delay(2000);
 }
