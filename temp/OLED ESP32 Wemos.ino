@@ -8,8 +8,7 @@
 // Peripherals Pin Map
 // RGB Led	G27
 // Btn	G39
-// IR	G12
-
+// IR	G12A
 // Bit	resolution	maximum frequency
 // 16	65536	1,220.70Hz
 // 15	32768	2,441.41Hz
