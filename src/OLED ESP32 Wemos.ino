@@ -51,8 +51,8 @@ float pot_Freq_Fine_Read;
 float pot_Freq_Fine_Read_old;
 float pot_DutyCycle_Read;
 float pot_DutyCycle_Read_old;
-int pot_DutyCycle_pin=34;
-int pot_Freq_Fine_pin=35;
+int pot_DutyCycle_pin=35;
+int pot_Freq_Fine_pin=34;
 int pot_Freq_Rough_pin=36;
 
 void setup() {
@@ -66,19 +66,9 @@ void setup() {
   ledcWrite(PWMChannel, dutyCycle);
 
   // GPIO pins setup
-  // pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,ANALOG) // I2C SCL
-  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
-  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
+  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
+  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
   pinMode(36, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq rough
-  // pinMode(21, INPUT); // PIN  (INPUT, OUTPUT,       ) //I2C SDA
-  // pinMode(25, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可
-  // pinMode(26, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可, DAC出力可
-  // pinMode(32, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)
-
-  // 内部ピン初期化
-  // pinMode(12, OUTPUT_OPEN_DRAIN); // IR赤外線(LOWで出力)
-  // digitalWrite(12, HIGH);
-
 
   //Display startup serial info
     Serial.println("start setup");
@@ -99,10 +89,9 @@ void setup() {
     display.println(freq);
     // display.println(F("OUT2 ="));
     display.display();
-
-
-  
 } 
+
+
 void loop() {
 
       //Read analog pot variables and map to duty cycle and frequency
@@ -118,7 +107,7 @@ void loop() {
       if (abs(pot_Freq_Fine_Read-pot_Freq_Fine_Read_old)>300){
         pot_Freq_Fine_Read_old=pot_Freq_Fine_Read;
         Serial.print("Pot frequency fine changed new value=");
-        Serial.println(pot_Freq_Rough_Read);
+        Serial.println(pot_Freq_Fine_Read);
       }
 
       int pot_DutyCycle_Read = analogRead(pot_DutyCycle_pin);
@@ -142,10 +131,7 @@ void loop() {
       // PWMChannel++;
       dutyCycle++;
       freq=freq+100000;
-      // ledcSetup(PWMChannel, freq, resolution);
-      // ledcAttachPin(PWMPin, PWMChannel);
-      // ledcWrite(PWMChannel, dutyCycle);
-
+ 
     ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
 
 
