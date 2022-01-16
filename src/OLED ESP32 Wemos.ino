@@ -47,32 +47,37 @@ int resolution = 4;
 int dutyCycle = 1;
 float pot_Freq_Rough_Read;
 float pot_Freq_Rough_Read_old;
-int pot_Freq_Rough_pin=33;
-
+float pot_Freq_Fine_Read;
+float pot_Freq_Fine_Read_old;
+float pot_DutyCycle_Read;
+float pot_DutyCycle_Read_old;
+int pot_DutyCycle_pin=34;
+int pot_Freq_Fine_pin=35;
+int pot_Freq_Rough_pin=36;
 
 void setup() {
   Serial.begin(115200);
+  //I2C setup for display
   Wire.begin(22,21); //I2C 
   
   //Setup PWM parameters
   ledcSetup(PWMChannel, freq, resolution);
-  // attach the channel to the GPIO to be controlled
   ledcAttachPin(PWMPin, PWMChannel);
   ledcWrite(PWMChannel, dutyCycle);
 
-    // GPIO初期化
-  pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,       )  input frequency potmeter
-  pinMode(19, INPUT); // PIN  (INPUT, OUTPUT,       ) output for driver
-  pinMode(23, INPUT); // PIN  (INPUT, OUTPUT,       ) 
-  pinMode(33, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG)
-  pinMode(21, INPUT); // PIN  (INPUT, OUTPUT,       )
-  pinMode(25, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可
-  pinMode(26, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可, DAC出力可
-  pinMode(32, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)
+  // GPIO pins setup
+  // pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,ANALOG) // I2C SCL
+  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
+  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
+  pinMode(36, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq rough
+  // pinMode(21, INPUT); // PIN  (INPUT, OUTPUT,       ) //I2C SDA
+  // pinMode(25, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可
+  // pinMode(26, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可, DAC出力可
+  // pinMode(32, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)
 
   // 内部ピン初期化
-  pinMode(12, OUTPUT_OPEN_DRAIN); // IR赤外線(LOWで出力)
-  digitalWrite(12, HIGH);
+  // pinMode(12, OUTPUT_OPEN_DRAIN); // IR赤外線(LOWで出力)
+  // digitalWrite(12, HIGH);
 
 
   //Display startup serial info
@@ -105,10 +110,23 @@ void loop() {
       int pot_Freq_Rough_Read = analogRead(pot_Freq_Rough_pin);
       if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>300){
         pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
-        Serial.print("Pot frequency changed new value=");
+        Serial.print("Pot frequency rough changed new value=");
         Serial.println(pot_Freq_Rough_Read);
       }
 
+      int pot_Freq_Fine_Read = analogRead(pot_Freq_Fine_pin);
+      if (abs(pot_Freq_Fine_Read-pot_Freq_Fine_Read_old)>300){
+        pot_Freq_Fine_Read_old=pot_Freq_Fine_Read;
+        Serial.print("Pot frequency fine changed new value=");
+        Serial.println(pot_Freq_Rough_Read);
+      }
+
+      int pot_DutyCycle_Read = analogRead(pot_DutyCycle_pin);
+      if (abs(pot_DutyCycle_Read-pot_DutyCycle_Read_old)>300){
+        pot_DutyCycle_Read_old=pot_DutyCycle_Read;
+        Serial.print("Pot dutycycle changed new value=");
+        Serial.println(pot_DutyCycle_Read);
+      }
   // if (M5.Btn.wasPressed()) {
   //   //Serial print button pressed
   //   Serial.println("Btn was pressed");
