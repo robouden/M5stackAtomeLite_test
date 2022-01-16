@@ -52,7 +52,7 @@ int pot_Freq_Rough_pin=33;
 
 void setup() {
   Serial.begin(115200);
-  Wire.begin(5,4); //I2C 
+  Wire.begin(22,21); //I2C 
   
   //Setup PWM parameters
   ledcSetup(PWMChannel, freq, resolution);
