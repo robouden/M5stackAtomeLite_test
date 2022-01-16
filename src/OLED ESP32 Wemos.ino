@@ -40,7 +40,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 #define VERSION "0.91"
 
 // setting PWM properties
-const int PWMPin = 19;  
+const int PWMPin = 32;  //outpin for driver
 int freq = 100000;
 int PWMChannel = 0;
 int resolution = 4;
