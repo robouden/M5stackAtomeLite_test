@@ -5,7 +5,7 @@ int sensorPin = 36;   // select the input pin for ldr
 int sensorValue = 0;  // variable to store the value coming from the sensor
 
 // Initialize the OLED display using Wire library
-SSD1306  display(0x3c, 5, 4);
+SSD1306  display(0x3D, 7, 6);
 
 void setup() {
   pinMode(sensorPin, INPUT);
