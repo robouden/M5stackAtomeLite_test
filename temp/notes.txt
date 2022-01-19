@@ -1,12 +1,7 @@
-2022-01-10
+2022-01-19
     Add storage in EEprom for Frequency, rough frequency fine and dutycycle 
-    At startup check if default storage populated if populated ignore the readings of the potmeter
+    At startup check if default storage populated if populated 
     Recall storage data in memory
 
-    If button is pressed switched to new case and set LED color for functionality
-        red     = frequency rough frequency
-        green   = frequency field_names
-        blue    = dutycycle.
-    
-    If button is long pushed, save current data in the current storage for the reading in the EEPROM
+
 
