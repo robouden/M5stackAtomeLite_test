@@ -42,14 +42,14 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 // setting PWM properties
 const int PWMPin = 32;  //outpin for driver
 unsigned int freq = 100000;
-unsigned int freq_min = 2000000;
-unsigned int freq_max = 3000000;
+unsigned int freq_min = 15000000;
+unsigned int freq_max = 16000000;
 unsigned int freq_rough =1;
 unsigned int freq_fine =1;
 int PWMChannel = 0;
-int resolution = 4;
+int resolution = 1;
 int dutyCycle = 1;
-int duty_max=16;
+int duty_max=8;
 unsigned int pot_Freq_Rough_Read;
 unsigned int pot_Freq_Rough_Read_old;
 unsigned int pot_Freq_Fine_Read;
@@ -78,7 +78,6 @@ void setup() {
   freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
   freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
 
-  
   //add fequency and frequency rought and fine
     unsigned int freq=freq_fine+freq_rough;
 
@@ -112,24 +111,25 @@ void loop() {
 
       //Read analog pot variables and map to duty cycle and frequency
       // for frequency rough the idea is:
-      int pot_Freq_Rough_Read = analogRead(pot_Freq_Rough_pin);
+      int pot_Freq_Rough_Read = (analogRead(pot_Freq_Rough_pin)+1);
       if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>100){
         pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
         Serial.print("Pot frequency rough changed new value=");
         Serial.println(pot_Freq_Rough_Read);
-        freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
+        freq_rough = abs(analogRead(pot_Freq_Rough_pin))*8000;
+        Serial.println(freq_rough);
         freq=freq_rough+freq_fine;
         //Write to PWM controller
           ledcWrite(PWMChannel, dutyCycle);
           ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
       }
 
-      int pot_Freq_Fine_Read = analogRead(pot_Freq_Fine_pin);
+      int pot_Freq_Fine_Read = (analogRead(pot_Freq_Fine_pin)+1);
       if (abs(pot_Freq_Fine_Read-pot_Freq_Fine_Read_old)>100){
         pot_Freq_Fine_Read_old=pot_Freq_Fine_Read;
         Serial.print("Pot frequency fine changed new value=");
         Serial.println(pot_Freq_Fine_Read);
-        freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
+        freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 100000);
         freq=freq_rough+freq_fine;
         //Write to PWM controller
           ledcWrite(PWMChannel, dutyCycle);
