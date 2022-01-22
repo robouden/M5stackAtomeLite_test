@@ -37,22 +37,27 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.91"
+#define VERSION "0.92"
 
 // setting PWM properties
-const int PWMPin = 19;  
-int freq = 100000;
+const int PWMPin = 32;  //outpin for driver
+unsigned int freq = 10000;
+unsigned int freq_min = 10000;
+unsigned int freq_max = 39000000;
+unsigned int freq_rough =1;
+unsigned int freq_fine =1;
 int PWMChannel = 0;
-int resolution = 4;
+int resolution = 1;
 int dutyCycle = 1;
-float pot_Freq_Rough_Read;
-float pot_Freq_Rough_Read_old;
-float pot_Freq_Fine_Read;
-float pot_Freq_Fine_Read_old;
-float pot_DutyCycle_Read;
-float pot_DutyCycle_Read_old;
-int pot_DutyCycle_pin=34;
-int pot_Freq_Fine_pin=35;
+int duty_max=16;
+unsigned int pot_Freq_Rough_Read;
+unsigned int pot_Freq_Rough_Read_old;
+unsigned int pot_Freq_Fine_Read;
+unsigned int pot_Freq_Fine_Read_old;
+unsigned int pot_DutyCycle_Read;
+unsigned int pot_DutyCycle_Read_old;
+int pot_DutyCycle_pin=35;
+int pot_Freq_Fine_pin=34;
 int pot_Freq_Rough_pin=36;
 
 void setup() {
@@ -66,23 +71,24 @@ void setup() {
   ledcWrite(PWMChannel, dutyCycle);
 
   // GPIO pins setup
-  // pinMode(22, INPUT); // PIN  (INPUT, OUTPUT,ANALOG) // I2C SCL
-  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
-  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
+  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
+  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
   pinMode(36, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq rough
-  // pinMode(21, INPUT); // PIN  (INPUT, OUTPUT,       ) //I2C SDA
-  // pinMode(25, INPUT); // PIN  (INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可
-  // pinMode(26, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)無線利用時にはANALOG利用不可, DAC出力可
-  // pinMode(32, INPUT); // GROVE(INPUT, OUTPUT, ANALOG)
 
-  // 内部ピン初期化
-  // pinMode(12, OUTPUT_OPEN_DRAIN); // IR赤外線(LOWで出力)
-  // digitalWrite(12, HIGH);
+  // freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
+  // freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
+
+  
+  //add fequency and frequency rought and fine
+    unsigned int freq=freq_fine+freq_rough;
 
 
   //Display startup serial info
     Serial.println("start setup");
-    Serial.printf("Duty = %d  Freq = %d HZ \n", (int)dutyCycle,freq);
+    Serial.printf("Duty = %d  Freqency = %d HZ \n", (int)dutyCycle,freq);
+    Serial.printf("Version =");
+    Serial.println(VERSION);
+
 
  //Display startup info
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
@@ -99,55 +105,70 @@ void setup() {
     display.println(freq);
     // display.println(F("OUT2 ="));
     display.display();
-
-
-  
 } 
+
+
 void loop() {
 
       //Read analog pot variables and map to duty cycle and frequency
       // for frequency rough the idea is:
-      int pot_Freq_Rough_Read = analogRead(pot_Freq_Rough_pin);
-      if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>300){
-        pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
-        Serial.print("Pot frequency rough changed new value=");
-        Serial.println(pot_Freq_Rough_Read);
-      }
+      // int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
+      // if (abs(pot_Freq_Rough_Read-pot_Freq_Rough_Read_old)>100){
+      //   pot_Freq_Rough_Read_old=pot_Freq_Rough_Read;
+      //   Serial.print("Pot frequency rough changed new value=");
+      //   Serial.println(pot_Freq_Rough_Read);
+      //   
+      //   freq=freq_rough+freq_fine;
+      //   //Write to PWM controller
+      //     ledcWrite(PWMChannel, dutyCycle);
+      //     ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+      // }
 
-      int pot_Freq_Fine_Read = analogRead(pot_Freq_Fine_pin);
-      if (abs(pot_Freq_Fine_Read-pot_Freq_Fine_Read_old)>300){
-        pot_Freq_Fine_Read_old=pot_Freq_Fine_Read;
-        Serial.print("Pot frequency fine changed new value=");
-        Serial.println(pot_Freq_Rough_Read);
-      }
+      // int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 100);
+      // if (abs(pot_Freq_Fine_Read-pot_Freq_Fine_Read_old)>100){
+      //   pot_Freq_Fine_Read_old=pot_Freq_Fine_Read;
+      //   Serial.print("Pot frequency fine changed new value=");
+      //   Serial.println(pot_Freq_Fine_Read);
+      //   freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
+      //   freq=freq_rough+freq_fine;
+      //   //Write to PWM controller
+      //     ledcWrite(PWMChannel, dutyCycle);
+      //     ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+      // }
 
-      int pot_DutyCycle_Read = analogRead(pot_DutyCycle_pin);
-      if (abs(pot_DutyCycle_Read-pot_DutyCycle_Read_old)>300){
-        pot_DutyCycle_Read_old=pot_DutyCycle_Read;
-        Serial.print("Pot dutycycle changed new value=");
-        Serial.println(pot_DutyCycle_Read);
-      }
-  // if (M5.Btn.wasPressed()) {
-  //   //Serial print button pressed
-  //   Serial.println("Btn was pressed");
 
-    //increase dutycycle
-    // dutyCycle++;
-    // if (dutyCycle>= 15) dutyCycle=0;
+      // if (abs(pot_DutyCycle_Read-pot_DutyCycle_Read_old)>100){
+      //   pot_DutyCycle_Read_old=pot_DutyCycle_Read;
+      //   Serial.print("Pot dutycycle changed new value=");
+      //   Serial.println(pot_DutyCycle_Read);
+      //   dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
+      //   //Write to PWM controller
+      //     ledcWrite(PWMChannel, dutyCycle);
+      //     ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+      // }
 
-    //Write to PWM controller
-    ledcWrite(PWMChannel, dutyCycle);
 
-    //increase PWMchannels and frequency
-      // PWMChannel++;
-      dutyCycle++;
-      freq=freq+100000;
-      // ledcSetup(PWMChannel, freq, resolution);
-      // ledcAttachPin(PWMPin, PWMChannel);
-      // ledcWrite(PWMChannel, dutyCycle);
 
-    ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
+int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 100);
+int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 
+
+//Create final frequency base on the two pots
+freq_rough=freq_rough*100000;
+freq_fine=freq_fine*10000;
+freq=freq_rough+freq_fine;
+
+
+if ((freq_min<freq) & (freq<freq_max)){;
+      // //Write new data to controller
+          ledcSetup(PWMChannel, freq, resolution);
+          ledcWrite(PWMChannel, dutyCycle);
+          ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+  } else{
+
+   Serial.printf("Freq is out of range freq_rough=%d  freq_fine= %d \n", freq_rough,freq_fine);
+  }
 
     //Serial print updated data
      Serial.printf("Duty = %d  Freq = %d HZ \n", (int)dutyCycle,freq);
@@ -160,12 +181,10 @@ void loop() {
     display.print(F("ZPE V"));
     display.println(F(VERSION));  
     display.println();  
-    display.print(F("Duty ="));
-    display.println(dutyCycle);  
-    display.print(F("Freq = "));
-    display.println(freq);
-    // ledc_get_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0);
+    display.printf("Duty = %d  \n", (int)dutyCycle);
+    display.printf("Freq = %d  \n", (int)freq);
     display.display();
-  // }
-  delay(2000);
+
+
+  delay(1000);
 }
