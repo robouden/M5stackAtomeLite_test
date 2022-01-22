@@ -37,7 +37,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.93"
+#define VERSION "0.94"
 
 // setting PWM properties
 const int PWMPin = 32;  //outpin for driver
@@ -151,13 +151,14 @@ void loop() {
 
 int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
 int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 100);
-int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
-
+// int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
+int freq_superfine = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, 100);
 
 //Create final frequency base on the two pots
 freq_rough=freq_rough*100000;
 freq_fine=freq_fine*10000;
-freq=freq_rough+freq_fine;
+freq_superfine =freq_superfine*100;
+freq=freq_rough+freq_fine+freq_superfine;
 
 
 if ((freq_min<freq) & (freq<freq_max)){;
