@@ -37,7 +37,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.95"
+#define VERSION "0.96"
 
 // setting PWM properties
 
