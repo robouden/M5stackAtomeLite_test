@@ -40,7 +40,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 #define VERSION "0.94"
 
 // setting PWM properties
-const int PWMPin = 32;  //outpin for driver
+
 unsigned int freq = 10000;
 unsigned int freq_min = 10000;
 unsigned int freq_max = 39000000;
@@ -56,9 +56,11 @@ unsigned int pot_Freq_Fine_Read;
 unsigned int pot_Freq_Fine_Read_old;
 unsigned int pot_DutyCycle_Read;
 unsigned int pot_DutyCycle_Read_old;
+int PWMPin = 33;  //outpin for driver
 int pot_DutyCycle_pin=35;
 int pot_Freq_Fine_pin=34;
 int pot_Freq_Rough_pin=36;
+int pot_Freq_SuperFine_pin=32
 
 void setup() {
   Serial.begin(115200);
