@@ -37,30 +37,37 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.94"
+#define VERSION "0.95"
 
 // setting PWM properties
 
 unsigned int freq = 10000;
 unsigned int freq_min = 10000;
 unsigned int freq_max = 39000000;
+
 unsigned int freq_rough =1;
 unsigned int freq_fine =1;
+unsigned int freq_superfine =1;
+
 int PWMChannel = 0;
 int resolution = 1;
 int dutyCycle = 1;
 int duty_max=16;
+int resolution_max=1;
+
 unsigned int pot_Freq_Rough_Read;
 unsigned int pot_Freq_Rough_Read_old;
 unsigned int pot_Freq_Fine_Read;
 unsigned int pot_Freq_Fine_Read_old;
 unsigned int pot_DutyCycle_Read;
 unsigned int pot_DutyCycle_Read_old;
-int PWMPin = 33;  //outpin for driver
+
+int PWM_Pin = 33;  //outpin for driver
+int pot_Freq_Rough_pin=32;
+int pot_Freq_Fine_pin=36;
+int pot_Freq_SuperFine_pin=36;
+int pot_Resolution_pin=34;
 int pot_DutyCycle_pin=35;
-int pot_Freq_Fine_pin=34;
-int pot_Freq_Rough_pin=36;
-int pot_Freq_SuperFine_pin=32
 
 void setup() {
   Serial.begin(115200);
@@ -69,25 +76,27 @@ void setup() {
   
   //Setup PWM parameters
   ledcSetup(PWMChannel, freq, resolution);
-  ledcAttachPin(PWMPin, PWMChannel);
+  ledcAttachPin(PWM_Pin, PWMChannel);
   ledcWrite(PWMChannel, dutyCycle);
 
   // GPIO pins setup
-  pinMode(35, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
-  pinMode(34, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
-  pinMode(36, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq rough
+  pinMode(pot_Freq_Rough_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq rough
+  pinMode(pot_Freq_Fine_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //freq fine
+  pinMode(pot_Freq_SuperFine_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //Freq supperfine
+  pinMode(pot_Resolution_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //Resolution
+  pinMode(pot_DutyCycle_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
+
 
   // freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
   // freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
 
   
   //add fequency and frequency rought and fine
-    unsigned int freq=freq_fine+freq_rough;
-
+    unsigned int freq=freq_fine+freq_rough+freq_superfine;
 
   //Display startup serial info
     Serial.println("start setup");
-    Serial.printf("Duty = %d  Freqency = %d HZ \n", (int)dutyCycle,freq);
+    Serial.printf("Duty = %d  Resolution= %d Freqency = %d HZ \n", (int)dutyCycle,(int)resolution,freq);
     Serial.printf("Version =");
     Serial.println(VERSION);
 
@@ -153,8 +162,10 @@ void loop() {
 
 int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
 int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 100);
-// int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int freq_superfine = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, 100);
+int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
+int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max,);
+
 
 //Create final frequency base on the two pots
 freq_rough=freq_rough*100000;
