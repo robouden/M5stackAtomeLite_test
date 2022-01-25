@@ -134,27 +134,12 @@ void setup() {
 
 void loop() {
 
- int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
-int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 99);
-int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 99);
-int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
-int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
-
-
-//Create final frequency base on the two pots
-freq_rough=freq_rough*100000;
-freq_fine=freq_fine*10000;
-freq_superfine =freq_superfine*100;
-freq=freq_rough+freq_fine+freq_superfine;
-
-
 if ((freq_min<freq) & (freq<freq_max)){;
       // //Write new data to controller
           ledcSetup(PWMChannel, freq, resolution);
           ledcWrite(PWMChannel, dutyCycle);
           ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
   } else{
-
    Serial.printf("Freq is out of range freq_rough=%d  freq_fine= %d freq_super_fine= %d \n", freq_rough,freq_fine, freq_superfine);
   }
 
