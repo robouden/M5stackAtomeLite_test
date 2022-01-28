@@ -73,18 +73,7 @@ void setup() {
   Serial.begin(115200);
   //I2C setup for display
   Wire.begin(22,21); //I2C 
-  
 
-   // SSD1306_SWITCHCAPVCC = generate display voltage from 3.3V internally
-  // if(!display.begin(SSD1306_SETCONTRAST 0x ) { 
-  //   Serial.println(F("SSD1306 allocation failed"));
-  //   for(;;); // Don't proceed, loop forever
-  // }
-
-  //Setup bright display
-
-  
-  
   //Setup PWM parameters
   ledcSetup(PWMChannel, freq, resolution);
   ledcAttachPin(PWM_Pin, PWMChannel);
@@ -96,7 +85,6 @@ void setup() {
   pinMode(pot_Freq_SuperFine_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //Freq supperfine
   pinMode(pot_Resolution_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //Resolution
   pinMode(pot_DutyCycle_pin, ANALOG); // PIN  (INPUT, OUTPUT, ANALOG) //DutyCycle
-
 
   // freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, freq_min, freq_max);
   // freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 1000, 10000);
@@ -110,7 +98,6 @@ void setup() {
     Serial.printf("Duty = %d  Resolution= %d Freqency = %d HZ \n", (int)dutyCycle,(int)resolution,freq);
     Serial.printf("Version =");
     Serial.println(VERSION);
-
 
  //Display startup info
     display.begin(SSD1306_SWITCHCAPVCC, 0x3C);
@@ -131,22 +118,18 @@ void setup() {
     display.ssd1306_command(255);
 } 
 
-
 void loop() {
-
 int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
 int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 99);
 int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 99);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
 
-
 //Create final frequency base on the two pots
 freq_rough=freq_rough*freq_base*1000;
 freq_fine=freq_fine*freq_base*100;
 freq_superfine =freq_superfine*freq_base*10;
 freq=freq_rough+freq_fine+freq_superfine;
-
 
 if ((freq_min<freq) & (freq<freq_max)){;
       // //Write new data to controller
@@ -173,7 +156,5 @@ if ((freq_min<freq) & (freq<freq_max)){;
     display.printf("Freq = %d  \n", (int)freq);
     display.printf("Resolution = %d  \n", (int)resolution);
     display.display();
-
-
   delay(1000);
 }
