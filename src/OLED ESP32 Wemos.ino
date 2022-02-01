@@ -41,7 +41,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 1000;
+unsigned int freq_base = 10;
 unsigned int freq = 100000;
 unsigned int freq_min = 10000;
 unsigned int freq_max = 39000000;
@@ -126,9 +126,9 @@ int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
 
 //Create final frequency base on the two pots
-freq_rough=freq_rough*10000;
-freq_fine=freq_fine*1000;
-freq_superfine =freq_superfine*100;
+freq_rough=freq_base*freq_rough*1000;
+freq_fine=freq_base*freq_fine*100;
+freq_superfine =freq_base*freq_superfine*10;
 freq=freq_rough+freq_fine+freq_superfine;
 
 if ((freq_min<=freq) & (freq<=freq_max)){;
