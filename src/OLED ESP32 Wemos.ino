@@ -43,7 +43,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 unsigned int freq_base = 10;
 unsigned int freq = 100000;
-unsigned int freq_min = 10000;
+unsigned int freq_min = 1000;
 unsigned int freq_max = 39000000;
 unsigned int freq_rough =1;
 unsigned int freq_fine =1;
@@ -119,9 +119,11 @@ void setup() {
 } 
 
 void loop() {
-int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 380);
-int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 99);
-int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 99);
+
+//read the pots
+int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 38);
+int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 9);
+int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 9);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
 
