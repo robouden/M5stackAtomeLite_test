@@ -27,6 +27,9 @@
 // 2	4	    20,000,000.00Hz
 // 1	2	    40,000,000.00Hz// The maximal frequency is 80000000 / 2^bit_num
 
+// formula for the bits calculations are log 2 (80000000 /freq)  
+// check Serial.println (log (freq) / log (2));
+
 
 #include <Wire.h>
 #include "driver/ledc.h"
@@ -41,7 +44,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 10;
+unsigned int freq_base = 100;
 unsigned int freq = 100000;
 unsigned int freq_min = 1000;
 unsigned int freq_max = 39000000;
@@ -71,6 +74,9 @@ int pot_DutyCycle_pin=35;
 
 void setup() {
   Serial.begin(115200);
+  delay(1000);
+  Serial.print(" Bits=");
+  Serial.println(int (log2 (80000000 /freq)));
   //I2C setup for display
   Wire.begin(22,21); //I2C 
 
@@ -140,10 +146,11 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
           ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
   } else{
    Serial.printf("Freq is out of range freq_rough=%d  freq_fine= %d freq_super_fine= %d \n", freq_rough,freq_fine, freq_superfine);
+     delay(1000);
   }
 
     //Serial print updated data
-  Serial.printf("Duty = %d  Resolution= %d Freqency = %d HZ \n", (int)dutyCycle,(int)resolution,freq);
+  Serial.printf("Duty = %d  Resolution= %d Freqency = %d HZ Bits= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)));
 
     //Display results
     display.clearDisplay();
