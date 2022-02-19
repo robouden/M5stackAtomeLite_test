@@ -155,7 +155,7 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
   }
 
     //Serial print updated data
-  Serial.printf("Duty = %d  Resolution= %d Freqency = %d HZ Bits= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)));
+  Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t Voltage1= %d \tVolage2= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)),feedback_voltage_1,feedback_voltage_2);
 
     //Display results
     display.clearDisplay();
