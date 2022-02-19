@@ -2890,7 +2890,7 @@
     (uuid 16fd7bc6-973c-494f-947a-ecf896814c68)
   )
   (text "2022-01-04\n\nIdea:\nChange the trafo with a active component \nwith coil to push up the voltage.\n\nsee 07564456.pdf for details or at \nhttps://www.researchgate.net/publication/308046728_Characterization_of_a_Drift-Step-Recovery_Diode_Based_on_All_Epi-Si_Growth\n\nor \nhttp://viy.com.ua/download/pub/12.pdf"
-    (at 314.325 32.385 0)
+    (at 32.385 187.325 0)
     (effects (font (size 1.27 1.27)) (justify left bottom))
     (uuid 4221b138-87b6-4073-a6e3-acb41ba2e601)
   )

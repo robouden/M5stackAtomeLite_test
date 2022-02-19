@@ -71,6 +71,9 @@ int pot_Freq_Fine_pin=32;
 int pot_Freq_SuperFine_pin=36;
 int pot_Resolution_pin=34;
 int pot_DutyCycle_pin=35;
+int feedback1_pin=19;//reads voltage from first coil
+int feedback2_pin=38;//reads voltage from end coil
+
 
 void setup() {
   Serial.begin(115200);
@@ -132,6 +135,8 @@ int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 9);
 int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 9);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
+int feedback_voltage_1 = map(analogRead(feedback1_pin), 0, 4096, 1, 1000); //input voltage devider is 1000-1
+int feedback_voltage_2 = map(analogRead(feedback2_pin), 0, 4096, 1, 1000); //input voltage devider is 1000-1
 
 //Create final frequency base on the two pots
 freq_rough=freq_base*freq_rough*1000;
@@ -163,6 +168,8 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
     display.printf("Duty = %d  \n", (int)dutyCycle);
     display.printf("Freq = %d  \n", (int)freq);
     display.printf("Resolution = %d  \n", (int)resolution);
+    display.printf("Voltage 1 = %d V \n", (int)feedback_voltage_1);
+    display.printf("Voltage 2 = %d V \n", (int)feedback_voltage_2);
     if ((freq_min<=freq) & (freq<=freq_max)){
     }else{
       display.printf("Freq is out of range");
