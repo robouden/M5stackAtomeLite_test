@@ -27,6 +27,26 @@
 // 2	4	    20,000,000.00Hz
 // 1	2	    40,000,000.00Hz// The maximal frequency is 80000000 / 2^bit_num
 
+// ESP32 analog pins:
+// ADC1_CH0 (GPIO 36)
+// ADC1_CH1 (GPIO 37)
+// ADC1_CH2 (GPIO 38)
+// ADC1_CH3 (GPIO 39)
+// ADC1_CH4 (GPIO 32)
+// ADC1_CH5 (GPIO 33)
+// ADC1_CH6 (GPIO 34)
+// ADC1_CH7 (GPIO 35)
+// ADC2_CH0 (GPIO 4)
+// ADC2_CH1 (GPIO 0)
+// ADC2_CH2 (GPIO 2)
+// ADC2_CH3 (GPIO 15)
+// ADC2_CH4 (GPIO 13)
+// ADC2_CH5 (GPIO 12)
+// ADC2_CH6 (GPIO 14)
+// ADC2_CH7 (GPIO 27)
+// ADC2_CH8 (GPIO 25)
+// ADC2_CH9 (GPIO 26)
+
 // formula for the bits calculations are log 2 (80000000 /freq)  
 // check Serial.println (log (freq) / log (2));
 
@@ -40,7 +60,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.96"
+#define VERSION "0.97"
 
 // setting PWM properties
 
@@ -71,8 +91,8 @@ int pot_Freq_Fine_pin=32;
 int pot_Freq_SuperFine_pin=36;
 int pot_Resolution_pin=34;
 int pot_DutyCycle_pin=35;
-int feedback1_pin=19;//reads voltage from first coil
-int feedback2_pin=38;//reads voltage from end coil
+int feedback1_pin=4;//reads voltage from first coil
+int feedback2_pin=2;//reads voltage from end coil
 
 
 void setup() {
