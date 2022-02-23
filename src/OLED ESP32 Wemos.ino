@@ -91,8 +91,8 @@ int pot_Freq_Fine_pin=32;
 int pot_Freq_SuperFine_pin=36;
 int pot_Resolution_pin=34;
 int pot_DutyCycle_pin=35;
-int feedback1_pin=16;//reads voltage from first coil
-int feedback2_pin=17;//reads voltage from end coil
+int feedback1_pin=18;//reads voltage from first coil
+int feedback2_pin=19;//reads voltage from end coil
 
 
 void setup() {
