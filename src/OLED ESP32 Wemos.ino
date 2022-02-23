@@ -91,8 +91,8 @@ int pot_Freq_Fine_pin=32;
 int pot_Freq_SuperFine_pin=36;
 int pot_Resolution_pin=34;
 int pot_DutyCycle_pin=35;
-int feedback1_pin=18;//reads voltage from first coil
-int feedback2_pin=19;//reads voltage from end coil
+int feedback1_pin=12;//reads voltage from first coil
+int feedback2_pin=14;//reads voltage from end coil
 
 
 void setup() {
@@ -175,7 +175,7 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
   }
 
     //Serial print updated data
-  Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t Voltage1= %d \tVolage2= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)),feedback_voltage_1,feedback_voltage_2);
+  Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t  AC Voltage1= %d \t AC Volage2= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)),feedback_voltage_1,feedback_voltage_2);
 
     //Display results
     display.clearDisplay();
@@ -188,7 +188,7 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
     display.printf("Duty = %d  \n", (int)dutyCycle);
     display.printf("Freq = %d  \n", (int)freq);
     display.printf("Resolution = %d  \n", (int)resolution);
-    display.printf("DC Voltage 1 = %d V \n", (int)feedback_voltage_1);
+    display.printf("AC Voltage 1 = %d V \n", (int)feedback_voltage_1);
     display.printf("AC Voltage 2 = %d V \n", (int)feedback_voltage_2);
     if ((freq_min<=freq) & (freq<=freq_max)){
     }else{
