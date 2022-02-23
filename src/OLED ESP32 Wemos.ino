@@ -60,7 +60,7 @@
 #define SCREEN_HEIGHT 64 // OLED display height, in pixels
 Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
-#define VERSION "0.97"
+#define VERSION "0.98"
 
 // setting PWM properties
 
@@ -188,8 +188,8 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
     display.printf("Duty = %d  \n", (int)dutyCycle);
     display.printf("Freq = %d  \n", (int)freq);
     display.printf("Resolution = %d  \n", (int)resolution);
-    display.printf("Voltage 1 = %d V \n", (int)feedback_voltage_1);
-    display.printf("Voltage 2 = %d V \n", (int)feedback_voltage_2);
+    display.printf("DC Voltage 1 = %d V \n", (int)feedback_voltage_1);
+    display.printf("AC Voltage 2 = %d V \n", (int)feedback_voltage_2);
     if ((freq_min<=freq) & (freq<=freq_max)){
     }else{
       display.printf("Freq is out of range");
