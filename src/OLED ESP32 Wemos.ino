@@ -155,8 +155,8 @@ int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 9);
 int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 9);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
 int resolution = map(analogRead(pot_Resolution_pin), 0, 4096, 1, resolution_max);
-int feedback_voltage_1 = map(analogRead(feedback1_pin), 0, 4096, 1, 1000); //input voltage devider is 1000-1
-int feedback_voltage_2 = map(analogRead(feedback2_pin), 0, 4096, 1, 1000); //input voltage devider is 1000-1
+int feedback_voltage_1 = map(analogRead(feedback1_pin), 0, 4096, 0, 1000); //input voltage devider is 1000-1
+int feedback_voltage_2 = map(analogRead(feedback2_pin), 0, 4096, 0, 1000); //input voltage devider is 1000-1
 
 //Create final frequency base on the two pots
 freq_rough=freq_base*freq_rough*1000;
