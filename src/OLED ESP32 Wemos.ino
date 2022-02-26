@@ -150,7 +150,7 @@ void setup() {
 void loop() {
 
 //read the pots
-int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 38);
+int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 5);
 int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 9);
 int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 9);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
