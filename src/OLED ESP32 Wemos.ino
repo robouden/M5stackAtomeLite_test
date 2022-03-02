@@ -64,8 +64,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 100;
-unsigned int freq = 100000;
+unsigned int freq_base = 10;
+unsigned int freq = 10000;
 unsigned int freq_min = 1000;
 unsigned int freq_max = 39000000;
 unsigned int freq_rough =1;
@@ -150,7 +150,7 @@ void setup() {
 void loop() {
 
 //read the pots
-int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 5);
+int freq_rough = map(analogRead(pot_Freq_Rough_pin), 0, 4096, 1, 9);
 int freq_fine = map(analogRead(pot_Freq_Fine_pin), 0, 4096, 0, 9);
 int freq_superfine = map(analogRead(pot_Freq_SuperFine_pin), 0, 4096, 0, 9);
 int dutyCycle = map(analogRead(pot_DutyCycle_pin), 0, 4096, 1, duty_max);
@@ -173,9 +173,9 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
    Serial.printf("Freq is out of range freq_rough=%d  freq_fine= %d freq_super_fine= %d \n", freq_rough,freq_fine, freq_superfine);
      delay(1000);
   }
-
+  int bits=(int (log2 (80000000 /freq)));
     //Serial print updated data
-  Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t  AC Voltage1= %d \t AC Volage2= %d \n", (int)dutyCycle,(int)resolution,freq,int (log2 (80000000/freq)),feedback_voltage_1,feedback_voltage_2);
+  Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t  AC Voltage1= %d \t AC Volage2= %d \n", (int)dutyCycle,(int)resolution,freq,bits,feedback_voltage_1,feedback_voltage_2);
 
     //Display results
     display.clearDisplay();
@@ -187,6 +187,7 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
     display.println();  
     display.printf("Duty = %d  \n", (int)dutyCycle);
     display.printf("Freq = %d  \n", (int)freq);
+    display.printf("Bits = %d  \n", (int)bits);
     display.printf("Resolution = %d  \n", (int)resolution);
     display.printf("AC Voltage 1 = %d V \n", (int)feedback_voltage_1);
     display.printf("AC Voltage 2 = %d V \n", (int)feedback_voltage_2);
