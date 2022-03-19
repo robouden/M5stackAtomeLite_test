@@ -164,37 +164,40 @@ freq_fine=freq_base*freq_fine*100;
 freq_superfine =freq_base*freq_superfine*10;
 freq=freq_rough+freq_fine+freq_superfine;
 
+//error trap invalid frequencies
 if ((freq_min<=freq) & (freq<=freq_max)){;
-      // //Write new data to controller
-          ledcSetup(PWMChannel, freq, resolution);
-          ledcWrite(PWMChannel, dutyCycle);
-          ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
+  //Write new data to controller
+      ledcSetup(PWMChannel, freq, resolution);
+      ledcWrite(PWMChannel, dutyCycle);
+      ledc_set_freq(LEDC_HIGH_SPEED_MODE,LEDC_TIMER_0,freq);
   } else{
    Serial.printf("Freq is out of range freq_rough=%d  freq_fine= %d freq_super_fine= %d \n", freq_rough,freq_fine, freq_superfine);
      delay(1000);
   }
-  int bits=(int (log2 (80000000 /freq)));
-    //Serial print updated data
+
+  //
+int bits=(int (log2 (80000000 /freq)));
+  //Serial print updated data
   Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t  AC Voltage1= %d \t AC Volage2= %d \n", (int)dutyCycle,(int)resolution,freq,bits,feedback_voltage_1,feedback_voltage_2);
 
-    //Display results
-    display.clearDisplay();
-    display.setTextSize(1);              // Normal 1:1 pixel scale
-    display.setTextColor(SSD1306_WHITE); // Draw white text
-    display.setCursor(0,0);              // Start at top-left corner
-    display.print(F("ZPE V"));
-    display.println(F(VERSION));  
-    display.println();  
-    display.printf("Duty = %d  \n", (int)dutyCycle);
-    display.printf("Freq = %d  \n", (int)freq);
-    display.printf("Bits = %d  \n", (int)bits);
-    display.printf("Resolution = %d  \n", (int)resolution);
-    display.printf("AC Voltage 1 = %d V \n", (int)feedback_voltage_1);
-    display.printf("AC Voltage 2 = %d V \n", (int)feedback_voltage_2);
-    if ((freq_min<=freq) & (freq<=freq_max)){
-    }else{
-      display.printf("Freq is out of range");
-    }
-    display.display();
+  //Display results
+  display.clearDisplay();
+  display.setTextSize(1);              // Normal 1:1 pixel scale
+  display.setTextColor(SSD1306_WHITE); // Draw white text
+  display.setCursor(0,0);              // Start at top-left corner
+  display.print(F("ZPE V"));
+  display.println(F(VERSION));  
+  display.println();  
+  display.printf("Duty = %d  \n", (int)dutyCycle);
+  display.printf("Freq = %d  \n", (int)freq);
+  display.printf("Bits = %d  \n", (int)bits);
+  display.printf("Resolution = %d  \n", (int)resolution);
+  display.printf("AC Voltage 1 = %d V \n", (int)feedback_voltage_1);
+  display.printf("AC Voltage 2 = %d V \n", (int)feedback_voltage_2);
+  if ((freq_min<=freq) & (freq<=freq_max)){
+  }else{
+    display.printf("Freq is out of range");
+  }
+  display.display();
   delay(1000);
 }

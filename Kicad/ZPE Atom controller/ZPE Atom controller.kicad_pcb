@@ -1,4 +1,4 @@
-(kicad_pcb (version 20220211) (generator pcbnew)
+(kicad_pcb (version 20220308) (generator pcbnew)
 
   (general
     (thickness 1.6)
@@ -140,7 +140,7 @@
   (net 58 "Net-(D6-A)")
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_T-16L_Single_Vertical_Hole" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp 075f968e-1748-48c5-a6e1-dfd4591849ef)
+    (tstamp 075f968e-1748-48c5-a6e1-dfd4591849ef)
     (at 124.62 121.84)
     (descr "Potentiometer, vertical, shaft hole, Piher T-16L Single, http://www.piher-nacesa.com/pdf/22-T16v03.pdf")
     (tags "Potentiometer vertical hole Piher T-16L Single")
@@ -205,7 +205,7 @@
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" (layer "F.Cu")
-    (tedit 59FED5CC) (tstamp 15ce1418-55b0-4ffc-8756-eed419e71700)
+    (tstamp 15ce1418-55b0-4ffc-8756-eed419e71700)
     (at 177.8 73.67)
     (descr "Through hole straight pin header, 1x19, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x19 2.54mm single row")
@@ -300,7 +300,7 @@
   )
 
   (footprint "Diode_SMD:D_MELF" (layer "F.Cu")
-    (tedit 5905D864) (tstamp 1775dfeb-f12d-4fbf-bc30-325244073ad9)
+    (tstamp 1775dfeb-f12d-4fbf-bc30-325244073ad9)
     (at 198.12 109.22)
     (descr "Diode, MELF,,")
     (tags "Diode MELF ")
@@ -366,7 +366,7 @@
   )
 
   (footprint "Diode_SMD:D_MELF" (layer "F.Cu")
-    (tedit 5905D864) (tstamp 17aabd7e-8abc-4b95-8108-acd52f7c935e)
+    (tstamp 17aabd7e-8abc-4b95-8108-acd52f7c935e)
     (at 198.12 114.3)
     (descr "Diode, MELF,,")
     (tags "Diode MELF ")
@@ -432,7 +432,7 @@
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp 2460f6d2-1d7c-4c35-9be4-33dfefab8082)
+    (tstamp 2460f6d2-1d7c-4c35-9be4-33dfefab8082)
     (at 74.707 96.44)
     (descr "Potentiometer, vertical, Piher PC-16 Single, http://www.piher-nacesa.com/pdf/20-PC16v03.pdf")
     (tags "Potentiometer vertical Piher PC-16 Single")
@@ -498,7 +498,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp 2f642a09-d113-4fe0-803d-ee299c164373)
+    (tstamp 2f642a09-d113-4fe0-803d-ee299c164373)
     (at 152.4 104.14)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -562,7 +562,7 @@
   )
 
   (footprint "Package_TO_SOT_SMD:SOT-23-5" (layer "F.Cu")
-    (tedit 5F6F9B37) (tstamp 439749f2-96d3-44a8-bdc0-e4c1c8bbc1ad)
+    (tstamp 439749f2-96d3-44a8-bdc0-e4c1c8bbc1ad)
     (at 111.76 71.12)
     (descr "SOT, 5 Pin (https://www.jedec.org/sites/default/files/docs/Mo-178c.PDF variant AA), generated with kicad-footprint-generator ipc_gullwing_generator.py")
     (tags "SOT TO_SOT_SMD")
@@ -626,7 +626,7 @@
   )
 
   (footprint "Package_DIP:DIP-8_W10.16mm" (layer "F.Cu")
-    (tedit 5A02E8C5) (tstamp 47474d45-22ef-4ff6-a167-c7484c81fb59)
+    (tstamp 47474d45-22ef-4ff6-a167-c7484c81fb59)
     (at 76.18 76.22 90)
     (descr "8-lead though-hole mounted DIP package, row spacing 10.16 mm (400 mils)")
     (tags "THT DIP DIL PDIP 2.54mm 10.16mm 400mil")
@@ -708,7 +708,7 @@
   )
 
   (footprint "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical" (layer "F.Cu")
-    (tedit 59FED5CC) (tstamp 5523ea8b-07e8-4d9d-9226-769001b2978d)
+    (tstamp 5523ea8b-07e8-4d9d-9226-769001b2978d)
     (at 185.42 73.67)
     (descr "Through hole straight pin header, 1x19, 2.54mm pitch, single row")
     (tags "Through hole pin header THT 1x19 2.54mm single row")
@@ -803,7 +803,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 573d575c-17ea-4825-9928-a33c4415d1e6)
+    (tstamp 573d575c-17ea-4825-9928-a33c4415d1e6)
     (at 130.07 70.88)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -863,7 +863,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 5931abef-eda7-4db3-a71c-c557bd951359)
+    (tstamp 5931abef-eda7-4db3-a71c-c557bd951359)
     (at 121.92 70.88)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -923,7 +923,7 @@
   )
 
   (footprint "Diode_SMD:D_MELF" (layer "F.Cu")
-    (tedit 5905D864) (tstamp 63f5adf9-5cb9-4104-a030-78f2c22b9298)
+    (tstamp 63f5adf9-5cb9-4104-a030-78f2c22b9298)
     (at 198.12 124.46)
     (descr "Diode, MELF,,")
     (tags "Diode MELF ")
@@ -989,7 +989,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 6ad5fec5-941c-4786-9db6-ebc04940edd5)
+    (tstamp 6ad5fec5-941c-4786-9db6-ebc04940edd5)
     (at 154.94 124.46)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -1049,7 +1049,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 7183429d-1ff8-4256-a1db-6a7616e9a998)
+    (tstamp 7183429d-1ff8-4256-a1db-6a7616e9a998)
     (at 138.176 70.866)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -1109,7 +1109,7 @@
   )
 
   (footprint "Diode_SMD:D_MELF" (layer "F.Cu")
-    (tedit 5905D864) (tstamp 788cb877-debb-45c7-980b-0cec9662bcb8)
+    (tstamp 788cb877-debb-45c7-980b-0cec9662bcb8)
     (at 198.12 104.72)
     (descr "Diode, MELF,,")
     (tags "Diode MELF ")
@@ -1175,7 +1175,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 7d9f6c52-7d5d-4462-99a3-ef44e072dc2d)
+    (tstamp 7d9f6c52-7d5d-4462-99a3-ef44e072dc2d)
     (at 138.176 74.916)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -1235,7 +1235,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp 7fc41378-914d-4073-b102-735bf7f58ee4)
+    (tstamp 7fc41378-914d-4073-b102-735bf7f58ee4)
     (at 152.4 88.9)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -1299,7 +1299,7 @@
   )
 
   (footprint "Transformer_THT:Transformer_NF_ETAL_P1165" (layer "F.Cu")
-    (tedit 5BEAF840) (tstamp 81590f65-289d-4cbd-9a21-bee45953732b)
+    (tstamp 81590f65-289d-4cbd-9a21-bee45953732b)
     (at 205.66 81.36)
     (descr "NF-Transformer,  ETAL, P1165,http://www.etalgroup.com/sites/default/files/products/P1165_February_2006.pdf")
     (tags "NF-Transformer ETAL P1165 ")
@@ -1648,7 +1648,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp 8effd443-b0b6-40d4-943d-96cc25aee3c6)
+    (tstamp 8effd443-b0b6-40d4-943d-96cc25aee3c6)
     (at 152.4 99.06)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -1712,7 +1712,7 @@
   )
 
   (footprint "Diode_SMD:D_MELF" (layer "F.Cu")
-    (tedit 5905D864) (tstamp 99933a70-c621-4427-b390-1a0f6ab183a8)
+    (tstamp 99933a70-c621-4427-b390-1a0f6ab183a8)
     (at 198.12 119.38)
     (descr "Diode, MELF,,")
     (tags "Diode MELF ")
@@ -1778,7 +1778,7 @@
   )
 
   (footprint "Package_TO_SOT_THT:TO-92_Inline" (layer "F.Cu")
-    (tedit 5A1DD157) (tstamp 9dd4dac1-404e-44d1-8a21-1a22afcdec32)
+    (tstamp 9dd4dac1-404e-44d1-8a21-1a22afcdec32)
     (at 208.28 68.58)
     (descr "TO-92 leads in-line, narrow, oval pads, drill 0.75mm (see NXP sot054_po.pdf)")
     (tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
@@ -1831,7 +1831,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp 9e686c5a-3e07-4771-89cd-93aec9f7aab9)
+    (tstamp 9e686c5a-3e07-4771-89cd-93aec9f7aab9)
     (at 121.92 74.93)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -1891,7 +1891,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp a7919d6f-5cdd-4804-b7ac-62cfa830c33f)
+    (tstamp a7919d6f-5cdd-4804-b7ac-62cfa830c33f)
     (at 163.09 120.41)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
@@ -1951,7 +1951,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp aa0ce9b9-e072-46d6-baab-d92c3c3ccc38)
+    (tstamp aa0ce9b9-e072-46d6-baab-d92c3c3ccc38)
     (at 152.4 114.3)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -2015,7 +2015,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp ae293969-fa6d-4cb1-9969-16f8784d07e3)
+    (tstamp ae293969-fa6d-4cb1-9969-16f8784d07e3)
     (at 152.4 83.82)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -2079,7 +2079,7 @@
   )
 
   (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal" (layer "F.Cu")
-    (tedit 5AE5139B) (tstamp c469846c-a104-4bfc-aae8-66d18a7e7de0)
+    (tstamp c469846c-a104-4bfc-aae8-66d18a7e7de0)
     (at 152.4 78.74)
     (descr "Resistor, Axial_DIN0207 series, Axial, Horizontal, pin pitch=10.16mm, 0.25W = 1/4W, length*diameter=6.3*2.5mm^2, http://cdn-reichelt.de/documents/datenblatt/B400/1_4W%23YAG.pdf")
     (tags "Resistor Axial_DIN0207 series Axial Horizontal pin pitch 10.16mm 0.25W = 1/4W length 6.3mm diameter 2.5mm")
@@ -2143,7 +2143,7 @@
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp d75f1379-cf40-49b3-9b28-2d291ed900e9)
+    (tstamp d75f1379-cf40-49b3-9b28-2d291ed900e9)
     (at 118.35 96.44)
     (descr "Potentiometer, vertical, Piher PC-16 Single, http://www.piher-nacesa.com/pdf/20-PC16v03.pdf")
     (tags "Potentiometer vertical Piher PC-16 Single")
@@ -2209,7 +2209,7 @@
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp dbe20cc9-b99f-4e22-ad59-f96e667d1efa)
+    (tstamp dbe20cc9-b99f-4e22-ad59-f96e667d1efa)
     (at 74.707 113.99)
     (descr "Potentiometer, vertical, Piher PC-16 Single, http://www.piher-nacesa.com/pdf/20-PC16v03.pdf")
     (tags "Potentiometer vertical Piher PC-16 Single")
@@ -2275,7 +2275,7 @@
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp e69b829b-c0b7-43a9-80d0-4376f3776ee0)
+    (tstamp e69b829b-c0b7-43a9-80d0-4376f3776ee0)
     (at 95.957 96.44)
     (descr "Potentiometer, vertical, Piher PC-16 Single, http://www.piher-nacesa.com/pdf/20-PC16v03.pdf")
     (tags "Potentiometer vertical Piher PC-16 Single")
@@ -2341,7 +2341,7 @@
   )
 
   (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical" (layer "F.Cu")
-    (tedit 5A3D4993) (tstamp fb7d0d2c-09e5-46e0-8091-1901472a84d1)
+    (tstamp fb7d0d2c-09e5-46e0-8091-1901472a84d1)
     (at 95.957 113.99)
     (descr "Potentiometer, vertical, Piher PC-16 Single, http://www.piher-nacesa.com/pdf/20-PC16v03.pdf")
     (tags "Potentiometer vertical Piher PC-16 Single")
@@ -2407,7 +2407,7 @@
   )
 
   (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" (layer "F.Cu")
-    (tedit 5AE50EF0) (tstamp fe8cbf07-3009-44a6-9e53-be7de4bcb490)
+    (tstamp fe8cbf07-3009-44a6-9e53-be7de4bcb490)
     (at 154.94 120.41)
     (descr "C, Disc series, Radial, pin pitch=5.00mm, , diameter*width=5*2.5mm^2, Capacitor, http://cdn-reichelt.de/documents/datenblatt/B300/DS_KERKO_TC.pdf")
     (tags "C Disc series Radial pin pitch 5.00mm  diameter 5mm width 2.5mm Capacitor")
