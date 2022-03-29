@@ -64,9 +64,9 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 10;
-unsigned int freq = 10000;
-unsigned int freq_min = 1000;
+unsigned int freq_base = 1;
+unsigned int freq = 100;
+unsigned int freq_min = 100;
 unsigned int freq_max = 39000000;
 unsigned int freq_rough =1;
 unsigned int freq_fine =1;
@@ -176,7 +176,7 @@ if ((freq_min<=freq) & (freq<=freq_max)){;
   }
 
   //
-int bits=(int (log2 (80000000 /freq)));
+  int bits=(int (log2 (80000000 /freq)));
   //Serial print updated data
   Serial.printf("Duty = %d  Resolution= %d \t Freqency = %d HZ \t Bits= %d \t  AC Voltage1= %d \t AC Volage2= %d \n", (int)dutyCycle,(int)resolution,freq,bits,feedback_voltage_1,feedback_voltage_2);
 
