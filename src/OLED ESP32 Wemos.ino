@@ -64,7 +64,7 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 1;
+unsigned int freq_base = 10;
 unsigned int freq = 100;
 unsigned int freq_min = 100;
 unsigned int freq_max = 39000000;
