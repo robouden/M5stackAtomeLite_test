@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name "TC4424AVPA")(type "Legacy")(uri "/usr/share/kicad-nightly/library/TC4424AVPA.lib")(options "")(descr ""))
+)

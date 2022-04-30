@@ -1,0 +1,3349 @@
+(export 
+  (version "E") 
+  (design 
+    (source "/home/rob/Documents/PlatformIO/Projects/ZPE hornbill ESP32/Kicad/2022-05-01 Test results//ZPE Atom controller.kicad_sch") 
+    (date "Sun 17 Apr 2022 09:24:33 PM JST") 
+    (tool "Eeschema 6.99.0-unknown-2f2e956921~148~ubuntu20.04.1") 
+    (sheet 
+      (number "1") 
+      (name "/") 
+      (tstamps "/") 
+      (title_block 
+        (title "ZPE controller") 
+        (company) 
+        (rev "V0.9") 
+        (date "2022-02-19") 
+        (source "ZPE Atom controller.kicad_sch") 
+        (comment 
+          (number "1") 
+          (value "")) 
+        (comment 
+          (number "2") 
+          (value "")) 
+        (comment 
+          (number "3") 
+          (value "")) 
+        (comment 
+          (number "4") 
+          (value "")) 
+        (comment 
+          (number "5") 
+          (value "")) 
+        (comment 
+          (number "6") 
+          (value "")) 
+        (comment 
+          (number "7") 
+          (value "")) 
+        (comment 
+          (number "8") 
+          (value "")) 
+        (comment 
+          (number "9") 
+          (value ""))))) 
+  (components 
+    (comp 
+      (ref "C1") 
+      (value "1NF 1.5K") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "d06d05ed-a9a2-412c-8228-fc02f3b89a6e")) 
+    (comp 
+      (ref "C2") 
+      (value "C_Polarized") 
+      (libsource 
+        (lib "Device") 
+        (part "C_Polarized") 
+        (description "Polarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Polarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "06feb3ee-538d-4aef-9757-5dbef52aca91")) 
+    (comp 
+      (ref "C3") 
+      (value "4uF 400V") 
+      (libsource 
+        (lib "Device") 
+        (part "C_Polarized") 
+        (description "Polarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Polarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "9286d074-3435-4abc-a492-422208598558")) 
+    (comp 
+      (ref "C4") 
+      (value "4uF 400V") 
+      (libsource 
+        (lib "Device") 
+        (part "C_Polarized") 
+        (description "Polarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Polarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "4957851d-adf2-445d-ad7a-4b0c08bb513e")) 
+    (comp 
+      (ref "C5") 
+      (value "4uF 400V") 
+      (libsource 
+        (lib "Device") 
+        (part "C_Polarized") 
+        (description "Polarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Polarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "0a4d2b39-219c-4b01-8f03-5746bf2fb14e")) 
+    (comp 
+      (ref "C6") 
+      (value "1NF 400V") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "8bf96bf1-d9ce-4d60-ae6b-d505267eb10d")) 
+    (comp 
+      (ref "C7") 
+      (value "1NF 1.5kV") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "921640b8-d1c8-4ecf-94d9-b7dea7acaf31")) 
+    (comp 
+      (ref "C8") 
+      (value "1000uF") 
+      (libsource 
+        (lib "Device") 
+        (part "C_Polarized") 
+        (description "Polarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Polarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "ebfe63bb-88ee-4c7a-801a-1101b71a62cf")) 
+    (comp 
+      (ref "C9") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "a5341750-b486-45f5-bb4e-3da98ba69466")) 
+    (comp 
+      (ref "C10") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "924c0b42-b0f3-4d80-a50e-554dabbcdae3")) 
+    (comp 
+      (ref "C11") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "1516ba09-5399-45fa-a362-0797687779e6")) 
+    (comp 
+      (ref "C12") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "0ddedd08-7028-4400-abb9-1458d5986585")) 
+    (comp 
+      (ref "C13") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "a373ed23-53ce-4415-a949-6f5c44603a56")) 
+    (comp 
+      (ref "C14") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "9d48f963-1cee-46b7-9262-acdd1f4625f3")) 
+    (comp 
+      (ref "C15") 
+      (value "100nF") 
+      (footprint "Capacitor_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm") 
+      (libsource 
+        (lib "Device") 
+        (part "C") 
+        (description "Unpolarized capacitor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Unpolarized capacitor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "cap capacitor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "bd2a7dda-c141-4b7e-97c4-ea82c9252861")) 
+    (comp 
+      (ref "D1") 
+      (value "D524") 
+      (footprint "Diode_SMD:D_MELF") 
+      (datasheet "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet") 
+      (libsource 
+        (lib "Diode") 
+        (part "1N5711UR") 
+        (description "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "ki_keywords") 
+        (value "diode Schottky")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "c4de31f0-88e4-47e7-a1a9-3f6ec8825129")) 
+    (comp 
+      (ref "D2") 
+      (value "D524") 
+      (footprint "Diode_SMD:D_MELF") 
+      (datasheet "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet") 
+      (libsource 
+        (lib "Diode") 
+        (part "1N5711UR") 
+        (description "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "ki_keywords") 
+        (value "diode Schottky")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "4ff0ae76-2bb9-4cd9-9d6d-a5395e2de03f")) 
+    (comp 
+      (ref "D3") 
+      (value "D524") 
+      (footprint "Diode_SMD:D_MELF") 
+      (datasheet "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet") 
+      (libsource 
+        (lib "Diode") 
+        (part "1N5711UR") 
+        (description "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "70V 33mA Schottky diode, MELF(DO-213AA)")) 
+      (property 
+        (name "ki_keywords") 
+        (value "diode Schottky")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "957a0c97-5ac2-4dc0-86dd-7b640381de7e")) 
+    (comp 
+      (ref "D4") 
+      (value "D_Bridge_+-AA") 
+      (libsource 
+        (lib "Device") 
+        (part "D_Bridge_+-AA") 
+        (description "Diode bridge, +ve/-ve/AC/AC")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Diode bridge, +ve/-ve/AC/AC")) 
+      (property 
+        (name "ki_keywords") 
+        (value "rectifier ACDC")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "bfb3e871-06c6-4c7a-8117-e6595cfd6f8c")) 
+    (comp 
+      (ref "D5") 
+      (value "D_Bridge_+-AA") 
+      (libsource 
+        (lib "Device") 
+        (part "D_Bridge_+-AA") 
+        (description "Diode bridge, +ve/-ve/AC/AC")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Diode bridge, +ve/-ve/AC/AC")) 
+      (property 
+        (name "ki_keywords") 
+        (value "rectifier ACDC")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "7707f341-1b72-4845-913b-b3c26a946f9b")) 
+    (comp 
+      (ref "D6") 
+      (value "4004") 
+      (footprint "Diode_SMD:D_MELF") 
+      (libsource 
+        (lib "Device") 
+        (part "D") 
+        (description "Diode")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Diode")) 
+      (property 
+        (name "ki_keywords") 
+        (value "diode")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "bc234a96-8e81-44f9-b2e6-4514c92af46f")) 
+    (comp 
+      (ref "D7") 
+      (value "4004") 
+      (footprint "Diode_SMD:D_MELF") 
+      (libsource 
+        (lib "Device") 
+        (part "D") 
+        (description "Diode")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Diode")) 
+      (property 
+        (name "ki_keywords") 
+        (value "diode")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "ed75a85a-b48d-45bd-876a-33a9bb410a26")) 
+    (comp 
+      (ref "DutyCycle1") 
+      (value "10k") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical") 
+      (libsource 
+        (lib "Device") 
+        (part "R_Potentiometer") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "8d318414-9517-4202-915f-0b5ef6b7ee7b")) 
+    (comp 
+      (ref "Freq_fine1") 
+      (value "10K") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical") 
+      (libsource 
+        (lib "") 
+        (part "R_Potentiometer_2") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "418e19cf-ec07-4213-bdc9-0796888f3d79")) 
+    (comp 
+      (ref "Freq_rough1") 
+      (value "10K") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical") 
+      (libsource 
+        (lib "") 
+        (part "R_Potentiometer_3") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "3cf7e9c3-7cb7-4599-9fbc-80b563294a59")) 
+    (comp 
+      (ref "Freq_super_fine1") 
+      (value "10k") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical") 
+      (libsource 
+        (lib "") 
+        (part "R_Potentiometer_1") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "d0da5fea-7bb8-466a-808d-a285a956d318")) 
+    (comp 
+      (ref "IC1") 
+      (value "TC4424AVPA") 
+      (footprint "Package_DIP:DIP-8_W10.16mm") 
+      (fields 
+        (field 
+          (name "Arrow Part Number") "TC4424AVPA") 
+        (field 
+          (name "Arrow Price/Stock") "https://www.arrow.com/en/products/tc4424avpa/microchip-technology?region=nac") 
+        (field 
+          (name "Description") "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP") 
+        (field 
+          (name "Manufacturer_Name") "Microchip") 
+        (field 
+          (name "Manufacturer_Part_Number") "TC4424AVPA") 
+        (field 
+          (name "Mouser Part Number") "579-TC4424AVPA") 
+        (field 
+          (name "Mouser Price/Stock") "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC4424AVPA?qs=AkCjCAp%252BzjQ%252BX%2F9zoVOWQw%3D%3D")) 
+      (libsource 
+        (lib "TC4424AVPA") 
+        (part "TC4424AVPA") 
+        (description "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP")) 
+      (property 
+        (name "Description") 
+        (value "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP")) 
+      (property 
+        (name "Height") 
+        (value "")) 
+      (property 
+        (name "Manufacturer_Name") 
+        (value "Microchip")) 
+      (property 
+        (name "Manufacturer_Part_Number") 
+        (value "TC4424AVPA")) 
+      (property 
+        (name "Mouser Part Number") 
+        (value "579-TC4424AVPA")) 
+      (property 
+        (name "Mouser Price/Stock") 
+        (value "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC4424AVPA?qs=AkCjCAp%252BzjQ%252BX%2F9zoVOWQw%3D%3D")) 
+      (property 
+        (name "Arrow Part Number") 
+        (value "TC4424AVPA")) 
+      (property 
+        (name "Arrow Price/Stock") 
+        (value "https://www.arrow.com/en/products/tc4424avpa/microchip-technology?region=nac")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "5780ff7d-8408-4221-a2e1-144fedc054dc")) 
+    (comp 
+      (ref "J1") 
+      (value "50 ohm 21 turns") 
+      (datasheet " ~") 
+      (libsource 
+        (lib "Connector") 
+        (part "Conn_Coaxial") 
+        (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)")) 
+      (property 
+        (name "ki_keywords") 
+        (value "BNC SMA SMB SMC LEMO coaxial connector CINCH RCA")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "9242e0f9-861b-4075-b6d9-7e339b399019")) 
+    (comp 
+      (ref "L1") 
+      (value "Coax 21 turns") 
+      (libsource 
+        (lib "Device") 
+        (part "L") 
+        (description "Inductor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Inductor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "inductor choke coil reactor magnetic")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "6bbd0be7-9eb1-4b67-960d-a391b84fc396")) 
+    (comp 
+      (ref "L2") 
+      (value "83T") 
+      (libsource 
+        (lib "Device") 
+        (part "L") 
+        (description "Inductor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Inductor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "inductor choke coil reactor magnetic")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "9303310f-876d-450d-a396-498031804fbe")) 
+    (comp 
+      (ref "L3") 
+      (value "83 T") 
+      (libsource 
+        (lib "Device") 
+        (part "L") 
+        (description "Inductor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Inductor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "inductor choke coil reactor magnetic")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "1324e325-7a95-49d1-8d11-9fc051edb99f")) 
+    (comp 
+      (ref "L4") 
+      (value "159 T") 
+      (libsource 
+        (lib "Device") 
+        (part "L") 
+        (description "Inductor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Inductor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "inductor choke coil reactor magnetic")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "e6ab0e52-9751-4b6d-9791-605a1feba99a")) 
+    (comp 
+      (ref "L5") 
+      (value "330uH") 
+      (libsource 
+        (lib "") 
+        (part "L_1") 
+        (description "Inductor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Inductor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "inductor choke coil reactor magnetic")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "7d7305a7-c7da-4881-b215-37c7f2ad171a")) 
+    (comp 
+      (ref "LA1") 
+      (value "Lamp 220V 40Watt") 
+      (libsource 
+        (lib "Device") 
+        (part "Lamp") 
+        (description "Lamp")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Lamp")) 
+      (property 
+        (name "ki_keywords") 
+        (value "lamp")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "0a4a8e71-c840-43b9-939b-aa8d8b95c1a0")) 
+    (comp 
+      (ref "P1") 
+      (value "CONN_01X18") 
+      (footprint "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical") 
+      (libsource 
+        (lib "") 
+        (part "CONN_01X19_1") 
+        (description "")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "6d34db10-7ee4-4cde-a4af-6e0f89095ed8")) 
+    (comp 
+      (ref "P2") 
+      (value "CONN_01X18") 
+      (footprint "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical") 
+      (libsource 
+        (lib "Hornbill-Devboard-rescue") 
+        (part "CONN_01X19") 
+        (description "")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "6c20966e-92d4-4959-9ba6-2946d25c7acd")) 
+    (comp 
+      (ref "Q1") 
+      (value "2N2222") 
+      (libsource 
+        (lib "Device") 
+        (part "Q_PNP_ECB") 
+        (description "PNP transistor, emitter/collector/base")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "PNP transistor, emitter/collector/base")) 
+      (property 
+        (name "ki_keywords") 
+        (value "transistor PNP")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "bba52ae1-2c60-4612-b640-b785ed4cdd7e")) 
+    (comp 
+      (ref "Q2") 
+      (value "IRF3205") 
+      (footprint "Housings_SIP:SIP3_11.6x8.5mm") 
+      (datasheet "https://www.jameco.com/Jameco/Products/ProdDS/209234FSC.pdf") 
+      (libsource 
+        (lib "ZPE-test-3-rescue") 
+        (part "BUZ11-Transistor") 
+        (description "")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "eec6f1b0-e4aa-49f8-b4a3-e9424cd19e76")) 
+    (comp 
+      (ref "R1") 
+      (value "4.7k") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "ba1ab41c-bcc1-4114-96ed-6de21e86cec1")) 
+    (comp 
+      (ref "R2") 
+      (value "1k") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "acd3eed8-82ea-477a-b50a-3a7848551491")) 
+    (comp 
+      (ref "R3") 
+      (value "4.7k") 
+      (footprint "Resistors_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P7.62mm_Horizontal") 
+      (libsource 
+        (lib "ZPE-test-3-small-board-only-rescue") 
+        (part "R-device") 
+        (description "")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "95ef25aa-dac6-44d9-90a0-efd49308b704")) 
+    (comp 
+      (ref "R5") 
+      (value "1K") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "4702a82e-cce4-49a1-9730-5350ecda1999")) 
+    (comp 
+      (ref "R6") 
+      (value "100") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_T-16L_Single_Vertical_Hole") 
+      (libsource 
+        (lib "") 
+        (part "R_Potentiometer_1") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "f2d201ea-d050-4595-9ca9-725c46100429")) 
+    (comp 
+      (ref "R7") 
+      (value "1M") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "b702c303-47a1-429a-9aa3-59808061e5d8")) 
+    (comp 
+      (ref "R8") 
+      (value "1k") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "472da5a0-705d-4029-a223-21e66297fddd")) 
+    (comp 
+      (ref "R9") 
+      (value "1M") 
+      (footprint "Resistor_THT:R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal") 
+      (libsource 
+        (lib "Device") 
+        (part "R") 
+        (description "Resistor")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Resistor")) 
+      (property 
+        (name "ki_keywords") 
+        (value "R res resistor")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "d3dc734e-87c0-4648-97d5-049adaf22b9b")) 
+    (comp 
+      (ref "Resolution1") 
+      (value "10K") 
+      (footprint "Potentiometer_THT:Potentiometer_Piher_PC-16_Single_Vertical") 
+      (libsource 
+        (lib "") 
+        (part "R_Potentiometer_4") 
+        (description "Potentiometer")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Potentiometer")) 
+      (property 
+        (name "ki_keywords") 
+        (value "resistor variable")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "b363d91d-fcd7-4752-acfe-6ce43382c232")) 
+    (comp 
+      (ref "SW1") 
+      (value "ON/OFF") 
+      (libsource 
+        (lib "Switch") 
+        (part "SW_SPST") 
+        (description "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "switch lever")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "705edee1-fc19-4950-8aac-33bef617012c")) 
+    (comp 
+      (ref "SW2") 
+      (value "SW_SPST") 
+      (libsource 
+        (lib "Switch") 
+        (part "SW_SPST") 
+        (description "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "switch lever")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "09dffe2f-119c-4acf-b279-934de0a0dda7")) 
+    (comp 
+      (ref "SW3") 
+      (value "SW_SPST") 
+      (libsource 
+        (lib "Switch") 
+        (part "SW_SPST") 
+        (description "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "switch lever")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "77006be8-e871-4875-98bd-df9b9f9c71da")) 
+    (comp 
+      (ref "SW4") 
+      (value "SW_SPST") 
+      (libsource 
+        (lib "Switch") 
+        (part "SW_SPST") 
+        (description "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Single Pole Single Throw (SPST) switch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "switch lever")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "f2a890da-4680-40ce-b207-f4f38e533c52")) 
+    (comp 
+      (ref "SW5") 
+      (value "RotaryEncoder_Switch") 
+      (libsource 
+        (lib "Device") 
+        (part "RotaryEncoder_Switch") 
+        (description "Rotary encoder, dual channel, incremental quadrate outputs, with switch")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Rotary encoder, dual channel, incremental quadrate outputs, with switch")) 
+      (property 
+        (name "ki_keywords") 
+        (value "rotary switch encoder switch push button")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "e06f99ab-70c9-48e0-9786-de35bc5b9bdc")) 
+    (comp 
+      (ref "T1") 
+      (value "Transformer_SP_1S") 
+      (footprint "Transformer_THT:Transformer_NF_ETAL_P1165") 
+      (libsource 
+        (lib "Device") 
+        (part "Transformer_1P_1S") 
+        (description "Transformer, single primary, single secondary")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Transformer, single primary, single secondary")) 
+      (property 
+        (name "ki_keywords") 
+        (value "transformer coil magnet")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "97f6a2ad-73c2-410b-9332-8d2e553541de")) 
+    (comp 
+      (ref "U1") 
+      (value "SSD1306") 
+      (footprint "Package_TO_SOT_SMD:SOT-23-5") 
+      (datasheet "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf") 
+      (libsource 
+        (lib "Memory_EEPROM") 
+        (part "24AA02-OT") 
+        (description "I2C Serial EEPROM, 2Kb, SOT-23")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "I2C Serial EEPROM, 2Kb, SOT-23")) 
+      (property 
+        (name "ki_keywords") 
+        (value "I2C Serial EEPROM")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "c1e78faf-25fc-46b6-b4c5-f5cb445c8db9")) 
+    (comp 
+      (ref "U2") 
+      (value "DC to AC inverter") 
+      (footprint "DC to AC inverter") 
+      (libsource 
+        (lib "") 
+        (part "24AA02-OT_1") 
+        (description "I2C Serial EEPROM, 2Kb, SOT-23")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "I2C Serial EEPROM, 2Kb, SOT-23")) 
+      (property 
+        (name "ki_keywords") 
+        (value "I2C Serial EEPROM")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "111be01c-3f3d-4a63-a730-20593490b837")) 
+    (comp 
+      (ref "U3") 
+      (value "4049") 
+      (datasheet "http://www.sycelectronica.com.ar/semiconductores/CD4009.pdf") 
+      (libsource 
+        (lib "4xxx") 
+        (part "4009") 
+        (description "Hex Buffer Inverter")) 
+      (property 
+        (name "Sheetname") 
+        (value "")) 
+      (property 
+        (name "Sheetfile") 
+        (value "ZPE Atom controller.kicad_sch")) 
+      (property 
+        (name "ki_description") 
+        (value "Hex Buffer Inverter")) 
+      (property 
+        (name "ki_keywords") 
+        (value "CMOS INV BUFFER high sink, VCC and VDD sep. VDD>VI>VCC!")) 
+      (sheetpath 
+        (names "/") 
+        (tstamps "/")) 
+      (tstamps "5ee66d2e-ca71-4fc0-9f0e-d0058f074dca"))) 
+  (libparts 
+    (libpart 
+      (lib "") 
+      (part "24AA02-OT_1") 
+      (description "I2C Serial EEPROM, 2Kb, SOT-23") 
+      (footprints 
+        (fp "SOT?23*")) 
+      (fields 
+        (field 
+          (name "Reference") "U?") 
+        (field 
+          (name "Value") "24AA02-OT_1") 
+        (field 
+          (name "Footprint") "DC to AC inverter")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "DC-") 
+          (type "power_in")) 
+        (pin 
+          (num "2") 
+          (name "DC+") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "AC-1") 
+          (type "output")) 
+        (pin 
+          (num "4") 
+          (name "AC-2") 
+          (type "output")) 
+        (pin 
+          (num "5") 
+          (name "NC") 
+          (type "no_connect")))) 
+    (libpart 
+      (lib "") 
+      (part "CONN_01X19_1") 
+      (footprints 
+        (fp "Pin_Header_Straight_1X19") 
+        (fp "Pin_Header_Angled_1X19") 
+        (fp "Socket_Strip_Straight_1X19") 
+        (fp "Socket_Strip_Angled_1X19")) 
+      (fields 
+        (field 
+          (name "Reference") "P1") 
+        (field 
+          (name "Value") "CONN_01X19_1") 
+        (field 
+          (name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x19_P2.54mm_Vertical")) 
+      (pins 
+        (pin 
+          (num "2") 
+          (name "P2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "P3") 
+          (type "passive")) 
+        (pin 
+          (num "4") 
+          (name "P4") 
+          (type "passive")) 
+        (pin 
+          (num "5") 
+          (name "P5") 
+          (type "passive")) 
+        (pin 
+          (num "6") 
+          (name "P6") 
+          (type "passive")) 
+        (pin 
+          (num "7") 
+          (name "P7") 
+          (type "passive")) 
+        (pin 
+          (num "8") 
+          (name "P8") 
+          (type "passive")) 
+        (pin 
+          (num "9") 
+          (name "P9") 
+          (type "passive")) 
+        (pin 
+          (num "10") 
+          (name "P10") 
+          (type "passive")) 
+        (pin 
+          (num "11") 
+          (name "P11") 
+          (type "passive")) 
+        (pin 
+          (num "12") 
+          (name "P12") 
+          (type "passive")) 
+        (pin 
+          (num "13") 
+          (name "P13") 
+          (type "passive")) 
+        (pin 
+          (num "14") 
+          (name "P14") 
+          (type "passive")) 
+        (pin 
+          (num "15") 
+          (name "P15") 
+          (type "passive")) 
+        (pin 
+          (num "16") 
+          (name "P16") 
+          (type "passive")) 
+        (pin 
+          (num "17") 
+          (name "P17") 
+          (type "passive")) 
+        (pin 
+          (num "18") 
+          (name "P18") 
+          (type "passive")) 
+        (pin 
+          (num "19") 
+          (name "P19") 
+          (type "passive")))) 
+    (libpart 
+      (lib "") 
+      (part "L_1") 
+      (description "Inductor") 
+      (docs "~") 
+      (footprints 
+        (fp "Choke_*") 
+        (fp "*Coil*") 
+        (fp "Inductor_*") 
+        (fp "L_*")) 
+      (fields 
+        (field 
+          (name "Reference") "L") 
+        (field 
+          (name "Value") "L_1") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")))) 
+    (libpart 
+      (lib "") 
+      (part "R_Potentiometer_1") 
+      (description "Potentiometer") 
+      (docs "~") 
+      (footprints 
+        (fp "Potentiometer*")) 
+      (fields 
+        (field 
+          (name "Reference") "RV") 
+        (field 
+          (name "Value") "R_Potentiometer_1") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "passive")))) 
+    (libpart 
+      (lib "") 
+      (part "R_Potentiometer_2") 
+      (description "Potentiometer") 
+      (docs "~") 
+      (footprints 
+        (fp "Potentiometer*")) 
+      (fields 
+        (field 
+          (name "Reference") "RV") 
+        (field 
+          (name "Value") "R_Potentiometer_2") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "passive")))) 
+    (libpart 
+      (lib "") 
+      (part "R_Potentiometer_3") 
+      (description "Potentiometer") 
+      (docs "~") 
+      (footprints 
+        (fp "Potentiometer*")) 
+      (fields 
+        (field 
+          (name "Reference") "RV") 
+        (field 
+          (name "Value") "R_Potentiometer_3") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "passive")))) 
+    (libpart 
+      (lib "") 
+      (part "R_Potentiometer_4") 
+      (description "Potentiometer") 
+      (docs "~") 
+      (footprints 
+        (fp "Potentiometer*")) 
+      (fields 
+        (field 
+          (name "Reference") "RV") 
+        (field 
+          (name "Value") "R_Potentiometer_4") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "passive")))) 
+    (libpart 
+      (lib "4xxx") 
+      (part "4009") 
+      (description "Hex Buffer Inverter") 
+      (docs "http://www.sycelectronica.com.ar/semiconductores/CD4009.pdf") 
+      (footprints 
+        (fp "DIP?16*")) 
+      (fields 
+        (field 
+          (name "Reference") "U") 
+        (field 
+          (name "Value") "4009") 
+        (field 
+          (name "Datasheet") "http://www.sycelectronica.com.ar/semiconductores/CD4009.pdf")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "VCC") 
+          (type "power_in")) 
+        (pin 
+          (num "2") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "3") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "4") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "5") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "6") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "7") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "8") 
+          (name "VSS") 
+          (type "power_in")) 
+        (pin 
+          (num "9") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "10") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "11") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "12") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "14") 
+          (name "") 
+          (type "input")) 
+        (pin 
+          (num "15") 
+          (name "") 
+          (type "output")) 
+        (pin 
+          (num "16") 
+          (name "VDD") 
+          (type "power_in")))) 
+    (libpart 
+      (lib "Connector") 
+      (part "Conn_Coaxial") 
+      (description "coaxial connector (BNC, SMA, SMB, SMC, Cinch/RCA, LEMO, ...)") 
+      (docs " ~") 
+      (footprints 
+        (fp "*BNC*") 
+        (fp "*SMA*") 
+        (fp "*SMB*") 
+        (fp "*SMC*") 
+        (fp "*Cinch*") 
+        (fp "*LEMO*")) 
+      (fields 
+        (field 
+          (name "Reference") "J") 
+        (field 
+          (name "Value") "Conn_Coaxial") 
+        (field 
+          (name "Datasheet") " ~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "In") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "Ext") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "C") 
+      (description "Unpolarized capacitor") 
+      (docs "~") 
+      (footprints 
+        (fp "C_*")) 
+      (fields 
+        (field 
+          (name "Reference") "C") 
+        (field 
+          (name "Value") "C") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "C_Polarized") 
+      (description "Polarized capacitor") 
+      (docs "~") 
+      (footprints 
+        (fp "CP_*")) 
+      (fields 
+        (field 
+          (name "Reference") "C") 
+        (field 
+          (name "Value") "C_Polarized") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "D") 
+      (description "Diode") 
+      (docs "~") 
+      (footprints 
+        (fp "TO-???*") 
+        (fp "*_Diode_*") 
+        (fp "*SingleDiode*") 
+        (fp "D_*")) 
+      (fields 
+        (field 
+          (name "Reference") "D") 
+        (field 
+          (name "Value") "D") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "K") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "A") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "D_Bridge_+-AA") 
+      (description "Diode bridge, +ve/-ve/AC/AC") 
+      (docs "~") 
+      (footprints 
+        (fp "D*Bridge*") 
+        (fp "D*Rectifier*")) 
+      (fields 
+        (field 
+          (name "Reference") "D") 
+        (field 
+          (name "Value") "D_Bridge_+-AA") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "+") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "-") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "") 
+          (type "passive")) 
+        (pin 
+          (num "4") 
+          (name "") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "L") 
+      (description "Inductor") 
+      (docs "~") 
+      (footprints 
+        (fp "Choke_*") 
+        (fp "*Coil*") 
+        (fp "Inductor_*") 
+        (fp "L_*")) 
+      (fields 
+        (field 
+          (name "Reference") "L") 
+        (field 
+          (name "Value") "L") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "Lamp") 
+      (description "Lamp") 
+      (docs "~") 
+      (fields 
+        (field 
+          (name "Reference") "LA") 
+        (field 
+          (name "Value") "Lamp") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "-") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "+") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "Q_PNP_ECB") 
+      (description "PNP transistor, emitter/collector/base") 
+      (docs "~") 
+      (fields 
+        (field 
+          (name "Reference") "Q") 
+        (field 
+          (name "Value") "Q_PNP_ECB") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "E") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "C") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "B") 
+          (type "input")))) 
+    (libpart 
+      (lib "Device") 
+      (part "R") 
+      (description "Resistor") 
+      (docs "~") 
+      (footprints 
+        (fp "R_*")) 
+      (fields 
+        (field 
+          (name "Reference") "R") 
+        (field 
+          (name "Value") "R") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "R_Potentiometer") 
+      (description "Potentiometer") 
+      (docs "~") 
+      (footprints 
+        (fp "Potentiometer*")) 
+      (fields 
+        (field 
+          (name "Reference") "RV") 
+        (field 
+          (name "Value") "R_Potentiometer") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "1") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "3") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "RotaryEncoder_Switch") 
+      (description "Rotary encoder, dual channel, incremental quadrate outputs, with switch") 
+      (docs "~") 
+      (footprints 
+        (fp "RotaryEncoder*Switch*")) 
+      (fields 
+        (field 
+          (name "Reference") "SW") 
+        (field 
+          (name "Value") "RotaryEncoder_Switch") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "A") 
+          (name "A") 
+          (type "passive")) 
+        (pin 
+          (num "B") 
+          (name "B") 
+          (type "passive")) 
+        (pin 
+          (num "C") 
+          (name "C") 
+          (type "passive")) 
+        (pin 
+          (num "S1") 
+          (name "S1") 
+          (type "passive")) 
+        (pin 
+          (num "S2") 
+          (name "S2") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Device") 
+      (part "Transformer_1P_1S") 
+      (description "Transformer, single primary, single secondary") 
+      (docs "~") 
+      (fields 
+        (field 
+          (name "Reference") "T") 
+        (field 
+          (name "Value") "Transformer_1P_1S") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "AA") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "AB") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "SA") 
+          (type "passive")) 
+        (pin 
+          (num "4") 
+          (name "SB") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Diode") 
+      (part "1N5711UR") 
+      (description "70V 33mA Schottky diode, MELF(DO-213AA)") 
+      (docs "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet") 
+      (footprints 
+        (fp "D?MELF*")) 
+      (fields 
+        (field 
+          (name "Reference") "D") 
+        (field 
+          (name "Value") "1N5711UR") 
+        (field 
+          (name "Footprint") "Diode_SMD:D_MELF") 
+        (field 
+          (name "Datasheet") "https://www.microsemi.com/document-portal/doc_download/131890-lds-0040-1-datasheet")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "K") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "A") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Hornbill-Devboard-rescue") 
+      (part "CONN_01X19") 
+      (footprints 
+        (fp "Pin_Header_Straight_1X19") 
+        (fp "Pin_Header_Angled_1X19") 
+        (fp "Socket_Strip_Straight_1X19") 
+        (fp "Socket_Strip_Angled_1X19")) 
+      (fields 
+        (field 
+          (name "Reference") "P2") 
+        (field 
+          (name "Value") "CONN_01X19") 
+        (field 
+          (name "Footprint") "Connector_PinHeader_2.54mm:PinHeader_1x18_P2.54mm_Vertical")) 
+      (pins 
+        (pin 
+          (num "2") 
+          (name "P2") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "P3") 
+          (type "passive")) 
+        (pin 
+          (num "4") 
+          (name "P4") 
+          (type "passive")) 
+        (pin 
+          (num "5") 
+          (name "P5") 
+          (type "passive")) 
+        (pin 
+          (num "6") 
+          (name "P6") 
+          (type "passive")) 
+        (pin 
+          (num "7") 
+          (name "P7") 
+          (type "passive")) 
+        (pin 
+          (num "8") 
+          (name "P8") 
+          (type "passive")) 
+        (pin 
+          (num "9") 
+          (name "P9") 
+          (type "passive")) 
+        (pin 
+          (num "10") 
+          (name "P10") 
+          (type "passive")) 
+        (pin 
+          (num "11") 
+          (name "P11") 
+          (type "passive")) 
+        (pin 
+          (num "12") 
+          (name "P12") 
+          (type "passive")) 
+        (pin 
+          (num "13") 
+          (name "P13") 
+          (type "passive")) 
+        (pin 
+          (num "14") 
+          (name "P14") 
+          (type "passive")) 
+        (pin 
+          (num "15") 
+          (name "P15") 
+          (type "passive")) 
+        (pin 
+          (num "16") 
+          (name "P16") 
+          (type "passive")) 
+        (pin 
+          (num "17") 
+          (name "P17") 
+          (type "passive")) 
+        (pin 
+          (num "18") 
+          (name "P18") 
+          (type "passive")) 
+        (pin 
+          (num "19") 
+          (name "P19") 
+          (type "passive")))) 
+    (libpart 
+      (lib "Memory_EEPROM") 
+      (part "24AA02-OT") 
+      (description "I2C Serial EEPROM, 2Kb, SOT-23") 
+      (docs "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf") 
+      (footprints 
+        (fp "SOT?23*")) 
+      (fields 
+        (field 
+          (name "Reference") "U?") 
+        (field 
+          (name "Value") "SSD1306") 
+        (field 
+          (name "Footprint") "Package_TO_SOT_SMD:SOT-23-5") 
+        (field 
+          (name "Datasheet") "http://ww1.microchip.com/downloads/en/DeviceDoc/21709J.pdf")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "GND") 
+          (type "power_in")) 
+        (pin 
+          (num "2") 
+          (name "VCC") 
+          (type "power_in")) 
+        (pin 
+          (num "3") 
+          (name "SCL") 
+          (type "input")) 
+        (pin 
+          (num "4") 
+          (name "SDA") 
+          (type "bidirectional")) 
+        (pin 
+          (num "5") 
+          (name "NC") 
+          (type "no_connect")))) 
+    (libpart 
+      (lib "Switch") 
+      (part "SW_SPST") 
+      (description "Single Pole Single Throw (SPST) switch") 
+      (docs "~") 
+      (fields 
+        (field 
+          (name "Reference") "SW") 
+        (field 
+          (name "Value") "SW_SPST") 
+        (field 
+          (name "Datasheet") "~")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "A") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "B") 
+          (type "passive")))) 
+    (libpart 
+      (lib "TC4424AVPA") 
+      (part "TC4424AVPA") 
+      (description "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP") 
+      (fields 
+        (field 
+          (name "Reference") "IC1") 
+        (field 
+          (name "Value") "TC4424AVPA") 
+        (field 
+          (name "Footprint") "Package_DIP:DIP-8_W10.16mm") 
+        (field 
+          (name "Description") "Microchip TC4424AVPA, Dual MOSFET Power Driver 4.5A, 4.5  18 V, Non-Inverting, 8-Pin PDIP") 
+        (field 
+          (name "Manufacturer_Name") "Microchip") 
+        (field 
+          (name "Manufacturer_Part_Number") "TC4424AVPA") 
+        (field 
+          (name "Mouser Part Number") "579-TC4424AVPA") 
+        (field 
+          (name "Mouser Price/Stock") "https://www.mouser.co.uk/ProductDetail/Microchip-Technology/TC4424AVPA?qs=AkCjCAp%252BzjQ%252BX%2F9zoVOWQw%3D%3D") 
+        (field 
+          (name "Arrow Part Number") "TC4424AVPA") 
+        (field 
+          (name "Arrow Price/Stock") "https://www.arrow.com/en/products/tc4424avpa/microchip-technology?region=nac")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "NC_2") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "IN_A") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "GND") 
+          (type "passive")) 
+        (pin 
+          (num "4") 
+          (name "IN_B") 
+          (type "passive")) 
+        (pin 
+          (num "5") 
+          (name "OUT_B") 
+          (type "passive")) 
+        (pin 
+          (num "6") 
+          (name "VDD") 
+          (type "passive")) 
+        (pin 
+          (num "7") 
+          (name "OUT_A") 
+          (type "passive")) 
+        (pin 
+          (num "8") 
+          (name "NC") 
+          (type "no_connect")))) 
+    (libpart 
+      (lib "ZPE-test-3-rescue") 
+      (part "BUZ11-Transistor") 
+      (footprints 
+        (fp "TO?220*")) 
+      (fields 
+        (field 
+          (name "Reference") "Q") 
+        (field 
+          (name "Value") "BUZ11-Transistor") 
+        (field 
+          (name "Footprint") "TO_SOT_Packages_THT:TO-220-3_Vertical")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "G") 
+          (type "input")) 
+        (pin 
+          (num "2") 
+          (name "D") 
+          (type "passive")) 
+        (pin 
+          (num "3") 
+          (name "S") 
+          (type "passive")))) 
+    (libpart 
+      (lib "ZPE-test-3-small-board-only-rescue") 
+      (part "R-device") 
+      (footprints 
+        (fp "R_*")) 
+      (fields 
+        (field 
+          (name "Reference") "R") 
+        (field 
+          (name "Value") "R-device")) 
+      (pins 
+        (pin 
+          (num "1") 
+          (name "") 
+          (type "passive")) 
+        (pin 
+          (num "2") 
+          (name "") 
+          (type "passive"))))) 
+  (libraries 
+    (library 
+      (logical "4xxx") 
+      (uri "/usr/share/kicad-nightly/symbols//4xxx.kicad_sym")) 
+    (library 
+      (logical "Connector") 
+      (uri "/usr/share/kicad-nightly/symbols//Connector.kicad_sym")) 
+    (library 
+      (logical "Device") 
+      (uri "/usr/share/kicad-nightly/symbols//Device.kicad_sym")) 
+    (library 
+      (logical "Diode") 
+      (uri "/usr/share/kicad-nightly/symbols//Diode.kicad_sym")) 
+    (library 
+      (logical "Memory_EEPROM") 
+      (uri "/usr/share/kicad-nightly/symbols//Memory_EEPROM.kicad_sym")) 
+    (library 
+      (logical "Switch") 
+      (uri "/usr/share/kicad-nightly/symbols//Switch.kicad_sym")) 
+    (library 
+      (logical "TC4424AVPA") 
+      (uri "/usr/share/kicad-nightly/library/TC4424AVPA.lib"))) 
+  (nets 
+    (net 
+      (code "1") 
+      (name "+3V3") 
+      (node 
+        (ref "DutyCycle1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_fine1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_rough1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_super_fine1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Resolution1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "U1") 
+        (pin "2") 
+        (pinfunction "VCC") 
+        (pintype "power_in"))) 
+    (net 
+      (code "2") 
+      (name "+5V") 
+      (node 
+        (ref "P1") 
+        (pin "19") 
+        (pinfunction "P19") 
+        (pintype "passive"))) 
+    (net 
+      (code "3") 
+      (name "+12V") 
+      (node 
+        (ref "C2") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "D4") 
+        (pin "1") 
+        (pinfunction "+") 
+        (pintype "passive")) 
+      (node 
+        (ref "IC1") 
+        (pin "6") 
+        (pinfunction "VDD") 
+        (pintype "passive")) 
+      (node 
+        (ref "R6") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "R6") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "4") 
+      (name "/CLK") 
+      (node 
+        (ref "P2") 
+        (pin "19") 
+        (pinfunction "P19") 
+        (pintype "passive"))) 
+    (net 
+      (code "5") 
+      (name "/CMD") 
+      (node 
+        (ref "P1") 
+        (pin "18") 
+        (pinfunction "P18") 
+        (pintype "passive"))) 
+    (net 
+      (code "6") 
+      (name "/EN") 
+      (node 
+        (ref "P1") 
+        (pin "2") 
+        (pinfunction "P2") 
+        (pintype "passive"))) 
+    (net 
+      (code "7") 
+      (name "/IO0") 
+      (node 
+        (ref "P2") 
+        (pin "14") 
+        (pinfunction "P14") 
+        (pintype "passive"))) 
+    (net 
+      (code "8") 
+      (name "/IO2") 
+      (node 
+        (ref "P2") 
+        (pin "15") 
+        (pinfunction "P15") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW5") 
+        (pin "A") 
+        (pinfunction "A") 
+        (pintype "passive"))) 
+    (net 
+      (code "9") 
+      (name "/IO4") 
+      (node 
+        (ref "P2") 
+        (pin "13") 
+        (pinfunction "P13") 
+        (pintype "passive"))) 
+    (net 
+      (code "10") 
+      (name "/IO5") 
+      (node 
+        (ref "P2") 
+        (pin "10") 
+        (pinfunction "P10") 
+        (pintype "passive"))) 
+    (net 
+      (code "11") 
+      (name "/IO12") 
+      (node 
+        (ref "C10") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "D7") 
+        (pin "1") 
+        (pinfunction "K") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "13") 
+        (pinfunction "P13") 
+        (pintype "passive")) 
+      (node 
+        (ref "R5") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "12") 
+      (name "/IO13") 
+      (node 
+        (ref "P1") 
+        (pin "15") 
+        (pinfunction "P15") 
+        (pintype "passive"))) 
+    (net 
+      (code "13") 
+      (name "/IO14") 
+      (node 
+        (ref "C9") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "D6") 
+        (pin "1") 
+        (pinfunction "K") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "12") 
+        (pinfunction "P12") 
+        (pintype "passive")) 
+      (node 
+        (ref "R8") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "14") 
+      (name "/IO15") 
+      (node 
+        (ref "P2") 
+        (pin "16") 
+        (pinfunction "P16") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW5") 
+        (pin "B") 
+        (pinfunction "B") 
+        (pintype "passive"))) 
+    (net 
+      (code "15") 
+      (name "/IO16") 
+      (node 
+        (ref "P2") 
+        (pin "12") 
+        (pinfunction "P12") 
+        (pintype "passive"))) 
+    (net 
+      (code "16") 
+      (name "/IO17") 
+      (node 
+        (ref "P2") 
+        (pin "11") 
+        (pinfunction "P11") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW5") 
+        (pin "S1") 
+        (pinfunction "S1") 
+        (pintype "passive"))) 
+    (net 
+      (code "17") 
+      (name "/IO18") 
+      (node 
+        (ref "P2") 
+        (pin "9") 
+        (pinfunction "P9") 
+        (pintype "passive"))) 
+    (net 
+      (code "18") 
+      (name "/IO19") 
+      (node 
+        (ref "P2") 
+        (pin "8") 
+        (pinfunction "P8") 
+        (pintype "passive"))) 
+    (net 
+      (code "19") 
+      (name "/IO21") 
+      (node 
+        (ref "P2") 
+        (pin "6") 
+        (pinfunction "P6") 
+        (pintype "passive")) 
+      (node 
+        (ref "U1") 
+        (pin "3") 
+        (pinfunction "SCL") 
+        (pintype "input"))) 
+    (net 
+      (code "20") 
+      (name "/IO22") 
+      (node 
+        (ref "P2") 
+        (pin "3") 
+        (pinfunction "P3") 
+        (pintype "passive")) 
+      (node 
+        (ref "U1") 
+        (pin "4") 
+        (pinfunction "SDA") 
+        (pintype "bidirectional"))) 
+    (net 
+      (code "21") 
+      (name "/IO23") 
+      (node 
+        (ref "P2") 
+        (pin "2") 
+        (pinfunction "P2") 
+        (pintype "passive"))) 
+    (net 
+      (code "22") 
+      (name "/IO25") 
+      (node 
+        (ref "P1") 
+        (pin "9") 
+        (pinfunction "P9") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW2") 
+        (pin "2") 
+        (pinfunction "B") 
+        (pintype "passive"))) 
+    (net 
+      (code "23") 
+      (name "/IO26") 
+      (node 
+        (ref "P1") 
+        (pin "10") 
+        (pinfunction "P10") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW3") 
+        (pin "2") 
+        (pinfunction "B") 
+        (pintype "passive"))) 
+    (net 
+      (code "24") 
+      (name "/IO27") 
+      (node 
+        (ref "P1") 
+        (pin "11") 
+        (pinfunction "P11") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW4") 
+        (pin "2") 
+        (pinfunction "B") 
+        (pintype "passive"))) 
+    (net 
+      (code "25") 
+      (name "/IO32") 
+      (node 
+        (ref "C12") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_fine1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "7") 
+        (pinfunction "P7") 
+        (pintype "passive"))) 
+    (net 
+      (code "26") 
+      (name "/IO33") 
+      (node 
+        (ref "IC1") 
+        (pin "2") 
+        (pinfunction "IN_A") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "8") 
+        (pinfunction "P8") 
+        (pintype "passive")) 
+      (node 
+        (ref "R1") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "U3") 
+        (pin "3") 
+        (pintype "input"))) 
+    (net 
+      (code "27") 
+      (name "/IO34") 
+      (node 
+        (ref "C14") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "5") 
+        (pinfunction "P5") 
+        (pintype "passive")) 
+      (node 
+        (ref "Resolution1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "28") 
+      (name "/IO35") 
+      (node 
+        (ref "C15") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "DutyCycle1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "6") 
+        (pinfunction "P6") 
+        (pintype "passive"))) 
+    (net 
+      (code "29") 
+      (name "/IO36") 
+      (node 
+        (ref "C13") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_super_fine1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "3") 
+        (pinfunction "P3") 
+        (pintype "passive"))) 
+    (net 
+      (code "30") 
+      (name "/IO39") 
+      (node 
+        (ref "C11") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_rough1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "4") 
+        (pinfunction "P4") 
+        (pintype "passive"))) 
+    (net 
+      (code "31") 
+      (name "/RXD0") 
+      (node 
+        (ref "P2") 
+        (pin "5") 
+        (pinfunction "P5") 
+        (pintype "passive"))) 
+    (net 
+      (code "32") 
+      (name "/SD0") 
+      (node 
+        (ref "P2") 
+        (pin "18") 
+        (pinfunction "P18") 
+        (pintype "passive"))) 
+    (net 
+      (code "33") 
+      (name "/SD1") 
+      (node 
+        (ref "P2") 
+        (pin "17") 
+        (pinfunction "P17") 
+        (pintype "passive"))) 
+    (net 
+      (code "34") 
+      (name "/SD2") 
+      (node 
+        (ref "P1") 
+        (pin "16") 
+        (pinfunction "P16") 
+        (pintype "passive"))) 
+    (net 
+      (code "35") 
+      (name "/SD3") 
+      (node 
+        (ref "P1") 
+        (pin "17") 
+        (pinfunction "P17") 
+        (pintype "passive"))) 
+    (net 
+      (code "36") 
+      (name "/TXD0") 
+      (node 
+        (ref "P2") 
+        (pin "4") 
+        (pinfunction "P4") 
+        (pintype "passive"))) 
+    (net 
+      (code "37") 
+      (name "Earth") 
+      (node 
+        (ref "C1") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "D3") 
+        (pin "2") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "D5") 
+        (pin "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "J1") 
+        (pin "2") 
+        (pinfunction "Ext") 
+        (pintype "passive")) 
+      (node 
+        (ref "L1") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "L3") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "38") 
+      (name "GND") 
+      (node 
+        (ref "C10") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C11") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C12") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C13") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C14") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C15") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C2") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C7") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C8") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C9") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "D4") 
+        (pin "2") 
+        (pinfunction "-") 
+        (pintype "passive")) 
+      (node 
+        (ref "DutyCycle1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_fine1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_rough1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "Freq_super_fine1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "IC1") 
+        (pin "3") 
+        (pinfunction "GND") 
+        (pintype "passive")) 
+      (node 
+        (ref "P1") 
+        (pin "14") 
+        (pinfunction "P14") 
+        (pintype "passive")) 
+      (node 
+        (ref "P2") 
+        (pin "7") 
+        (pinfunction "P7") 
+        (pintype "passive")) 
+      (node 
+        (ref "Q1") 
+        (pin "2") 
+        (pinfunction "C") 
+        (pintype "passive")) 
+      (node 
+        (ref "Q2") 
+        (pin "3") 
+        (pinfunction "S") 
+        (pintype "passive")) 
+      (node 
+        (ref "R1") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "R5") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "R8") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "Resolution1") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW2") 
+        (pin "1") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW3") 
+        (pin "1") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW4") 
+        (pin "1") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW5") 
+        (pin "C") 
+        (pinfunction "C") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW5") 
+        (pin "S2") 
+        (pinfunction "S2") 
+        (pintype "passive")) 
+      (node 
+        (ref "U1") 
+        (pin "1") 
+        (pinfunction "GND") 
+        (pintype "power_in"))) 
+    (net 
+      (code "39") 
+      (name "Net-(C6-Pad1)") 
+      (node 
+        (ref "C6") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "L4") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "40") 
+      (name "Net-(C6-Pad2)") 
+      (node 
+        (ref "C6") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "L4") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "41") 
+      (name "Net-(C8-Pad1)") 
+      (node 
+        (ref "C8") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "L5") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "R6") 
+        (pin "3") 
+        (pinfunction "3") 
+        (pintype "passive"))) 
+    (net 
+      (code "42") 
+      (name "Net-(D1-A)") 
+      (node 
+        (ref "D1") 
+        (pin "2") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "Q2") 
+        (pin "2") 
+        (pinfunction "D") 
+        (pintype "passive")) 
+      (node 
+        (ref "T1") 
+        (pin "2") 
+        (pinfunction "AB") 
+        (pintype "passive"))) 
+    (net 
+      (code "43") 
+      (name "Net-(D1-K)") 
+      (node 
+        (ref "C7") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "D1") 
+        (pin "1") 
+        (pinfunction "K") 
+        (pintype "passive")) 
+      (node 
+        (ref "L5") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "T1") 
+        (pin "1") 
+        (pinfunction "AA") 
+        (pintype "passive"))) 
+    (net 
+      (code "44") 
+      (name "Net-(D2-A)") 
+      (node 
+        (ref "D2") 
+        (pin "2") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "D3") 
+        (pin "1") 
+        (pinfunction "K") 
+        (pintype "passive"))) 
+    (net 
+      (code "45") 
+      (name "Net-(D2-K)") 
+      (node 
+        (ref "D2") 
+        (pin "1") 
+        (pinfunction "K") 
+        (pintype "passive")) 
+      (node 
+        (ref "J1") 
+        (pin "1") 
+        (pinfunction "In") 
+        (pintype "passive")) 
+      (node 
+        (ref "R9") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "T1") 
+        (pin "4") 
+        (pinfunction "SB") 
+        (pintype "passive"))) 
+    (net 
+      (code "46") 
+      (name "Net-(D4-Pad3)") 
+      (node 
+        (ref "D4") 
+        (pin "3") 
+        (pintype "passive")) 
+      (node 
+        (ref "L2") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "47") 
+      (name "Net-(D4-Pad4)") 
+      (node 
+        (ref "D4") 
+        (pin "4") 
+        (pintype "passive")) 
+      (node 
+        (ref "L2") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "48") 
+      (name "Net-(D5-+)") 
+      (node 
+        (ref "C3") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "C4") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "C5") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "D5") 
+        (pin "1") 
+        (pinfunction "+") 
+        (pintype "passive")) 
+      (node 
+        (ref "LA1") 
+        (pin "2") 
+        (pinfunction "+") 
+        (pintype "passive")) 
+      (node 
+        (ref "U2") 
+        (pin "2") 
+        (pinfunction "DC+") 
+        (pintype "power_in"))) 
+    (net 
+      (code "49") 
+      (name "Net-(D5--)") 
+      (node 
+        (ref "C3") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C4") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "C5") 
+        (pin "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "D5") 
+        (pin "2") 
+        (pinfunction "-") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW1") 
+        (pin "2") 
+        (pinfunction "B") 
+        (pintype "passive")) 
+      (node 
+        (ref "U2") 
+        (pin "1") 
+        (pinfunction "DC-") 
+        (pintype "power_in"))) 
+    (net 
+      (code "50") 
+      (name "Net-(D5-Pad4)") 
+      (node 
+        (ref "D5") 
+        (pin "4") 
+        (pintype "passive")) 
+      (node 
+        (ref "L3") 
+        (pin "2") 
+        (pinfunction "2") 
+        (pintype "passive")) 
+      (node 
+        (ref "R7") 
+        (pin "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "51") 
+      (name "Net-(D6-A)") 
+      (node 
+        (ref "D6") 
+        (pin "2") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "R7") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "52") 
+      (name "Net-(D7-A)") 
+      (node 
+        (ref "D7") 
+        (pin "2") 
+        (pinfunction "A") 
+        (pintype "passive")) 
+      (node 
+        (ref "R9") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "53") 
+      (name "Net-(IC1-IN_B)") 
+      (node 
+        (ref "IC1") 
+        (pin "4") 
+        (pinfunction "IN_B") 
+        (pintype "passive")) 
+      (node 
+        (ref "U3") 
+        (pin "2") 
+        (pintype "output"))) 
+    (net 
+      (code "54") 
+      (name "Net-(IC1-OUT_A)") 
+      (node 
+        (ref "IC1") 
+        (pin "7") 
+        (pinfunction "OUT_A") 
+        (pintype "passive")) 
+      (node 
+        (ref "R2") 
+        (pin "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "55") 
+      (name "Net-(LA1--)") 
+      (node 
+        (ref "LA1") 
+        (pin "1") 
+        (pinfunction "-") 
+        (pintype "passive")) 
+      (node 
+        (ref "SW1") 
+        (pin "1") 
+        (pinfunction "A") 
+        (pintype "passive"))) 
+    (net 
+      (code "56") 
+      (name "Net-(Q1-B)") 
+      (node 
+        (ref "Q1") 
+        (pin "3") 
+        (pinfunction "B") 
+        (pintype "input")) 
+      (node 
+        (ref "R3") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "57") 
+      (name "Net-(Q2-G)") 
+      (node 
+        (ref "Q2") 
+        (pin "1") 
+        (pinfunction "G") 
+        (pintype "input")) 
+      (node 
+        (ref "R2") 
+        (pin "2") 
+        (pintype "passive"))) 
+    (net 
+      (code "58") 
+      (name "Net-(T1-SA)") 
+      (node 
+        (ref "C1") 
+        (pin "1") 
+        (pintype "passive")) 
+      (node 
+        (ref "T1") 
+        (pin "3") 
+        (pinfunction "SA") 
+        (pintype "passive"))) 
+    (net 
+      (code "59") 
+      (name "unconnected-(IC1-NC)") 
+      (node 
+        (ref "IC1") 
+        (pin "8") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "60") 
+      (name "unconnected-(IC1-NC_2)") 
+      (node 
+        (ref "IC1") 
+        (pin "1") 
+        (pinfunction "NC_2") 
+        (pintype "passive"))) 
+    (net 
+      (code "61") 
+      (name "unconnected-(IC1-OUT_B)") 
+      (node 
+        (ref "IC1") 
+        (pin "5") 
+        (pinfunction "OUT_B") 
+        (pintype "passive"))) 
+    (net 
+      (code "62") 
+      (name "unconnected-(L1-Pad1)") 
+      (node 
+        (ref "L1") 
+        (pin "1") 
+        (pinfunction "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "63") 
+      (name "unconnected-(Q1-E)") 
+      (node 
+        (ref "Q1") 
+        (pin "1") 
+        (pinfunction "E") 
+        (pintype "passive"))) 
+    (net 
+      (code "64") 
+      (name "unconnected-(R3-Pad1)") 
+      (node 
+        (ref "R3") 
+        (pin "1") 
+        (pintype "passive"))) 
+    (net 
+      (code "65") 
+      (name "unconnected-(U1-NC)") 
+      (node 
+        (ref "U1") 
+        (pin "5") 
+        (pinfunction "NC") 
+        (pintype "no_connect"))) 
+    (net 
+      (code "66") 
+      (name "unconnected-(U2-AC-1)") 
+      (node 
+        (ref "U2") 
+        (pin "3") 
+        (pinfunction "AC-1") 
+        (pintype "output"))) 
+    (net 
+      (code "67") 
+      (name "unconnected-(U2-AC-2)") 
+      (node 
+        (ref "U2") 
+        (pin "4") 
+        (pinfunction "AC-2") 
+        (pintype "output"))) 
+    (net 
+      (code "68") 
+      (name "unconnected-(U2-NC)") 
+      (node 
+        (ref "U2") 
+        (pin "5") 
+        (pinfunction "NC") 
+        (pintype "no_connect")))))
