@@ -64,8 +64,8 @@ Adafruit_SSD1306 display(SCREEN_WIDTH, SCREEN_HEIGHT, &Wire, -1);
 
 // setting PWM properties
 
-unsigned int freq_base = 100;
-unsigned int freq = 100;
+unsigned int freq_base = 1;
+unsigned int freq = 1;
 unsigned int freq_min = 100;
 unsigned int freq_max = 39000000;
 unsigned int freq_rough =1;
@@ -159,9 +159,9 @@ int feedback_voltage_1 = map(analogRead(feedback1_pin), 0, 4096, 0, 1000); //inp
 int feedback_voltage_2 = map(analogRead(feedback2_pin), 0, 4096, 0, 1000); //input voltage devider is 1000-1
 
 //Create final frequency base on the two pots
-freq_rough=freq_base*freq_rough*1000;
-freq_fine=freq_base*freq_fine*100;
-freq_superfine =freq_base*freq_superfine*10;
+freq_rough=freq_base*freq_rough*100;
+freq_fine=freq_base*freq_fine*10;
+freq_superfine =freq_base*freq_superfine*1;
 freq=freq_rough+freq_fine+freq_superfine;
 
 //error trap invalid frequencies
